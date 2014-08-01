@@ -156,6 +156,26 @@
             background-color: #ffffff;
         }
     </style>
+    <!-- Placed at the end of the document so the pages load faster -->    
+	<script src='lib/jquery/jquery.js'></script>
+	<script src='lib/jquery/jquery-migrate.min.js'></script>
+
+	<script src='lib/underscore-min.js'></script>
+	<script src='lib/backbone.js'></script>
+
+
+	<!-- JAVASCRIPT  -->
+	<script src="js/utils.js"></script>
+
+	<script src="js/models/model.js"></script>
+
+	<script src="js/views/header.js"></script>
+	<script src="js/views/footer.js"></script>
+	<script src="js/views/home.js"></script>
+
+	<script src="js/app.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/common.js"></script>
 </head>
 
 <body>
@@ -181,29 +201,5 @@
 		</div>
 	</div>	
 </div>
-
-<!-- Placed at the end of the document so the pages load faster -->    
-<script src='lib/jquery/jquery.js'></script>
-<script src='lib/jquery/jquery-migrate.min.js'></script>
-
-<script src='lib/underscore-min.js'></script>
-<script src='lib/backbone.js'></script>
-
-
-<!-- JAVASCRIPT  -->
-<script src="js/utils.js"></script>
-
-<script src="js/models/model.js"></script>
-
-<script src="js/views/header.js"></script>
-<script src="js/views/footer.js"></script>
-<script src="js/views/home.js"></script>
-
-<script src="js/main.js"></script>
-<script src="js/common.js"></script>
-
-
-
-
 </body>
 </html>

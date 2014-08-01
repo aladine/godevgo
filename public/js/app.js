@@ -16,7 +16,7 @@
     $window  = $(window);
     $document = $(document);
     $body   = $('body');
- 
+    $ = jQuery;
  
   });//end document ready
  
