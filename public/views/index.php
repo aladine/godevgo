@@ -11,19 +11,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link rel="shortcut icon" href="../../assets/ico/favicon.png">	
+    <link rel="shortcut icon" href="../favicon.ico">	
 
     <title>GoDevGo</title>
-<!--       <link rel='stylesheet' id='jobify-fonts-css' href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Varela+Round&#038;subset=latin' type='text/css' media='all' />
- -->    <link rel='stylesheet' id='jobify-vendor-css' href='/css/vendor.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='jobify-vendor-css' href='/css/vendor.min.css' type='text/css' media='all' />
     <link rel='stylesheet' id='jobify-entypo-css' href='/css/entypo.min.css' type='text/css' media='all' />
     <link rel='stylesheet' id='jobify-css' href='/css/style.css' type='text/css' media='all' />
     <link rel='stylesheet' id='jobify-responsive-css' href='/css/responsive.min.css' type='text/css' media='all' />
     <link rel='stylesheet' id='sccss_style-css' href='/css/job.css' type='text/css' media='all' />
-	<!-- Bootstrap core CSS -->    
-    <!-- <link href="../css/bootstrap.css" rel="stylesheet">         -->
-    <!-- Custom styles for this template -->
-    <!-- <link href="../css/mystyle.css" rel="stylesheet"> -->
         		
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
