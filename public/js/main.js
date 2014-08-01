@@ -13,7 +13,8 @@ window.Router = Backbone.Router.extend({
         "company/add":"addCompany",
         "company/view/:id":"viewCompany",
         "company/candidates":"viewCandidates",
-		"candidate/view/:id":"viewCandidate"
+		"candidate/view/:id":"viewCandidate",
+		"library/view":"viewLibrary"
     },
 
     initialize: function () {
@@ -103,6 +104,14 @@ window.Router = Backbone.Router.extend({
          this.ListCandidateView = new ListCandidateView();           
         this.ListCandidateView.render();
         $("#content").html(this.ListCandidateView.el);
+        // this.headerView.select('home-menu');  
+    },
+	listLibrary: function () {
+        // body...
+         console.log('listLibrary');
+         this.ListLibraryView = new ListLibraryView();           
+        this.ListLibraryView.render();
+        $("#content").html(this.ListLibraryView.el);
         // this.headerView.select('home-menu');  
     }
 });
