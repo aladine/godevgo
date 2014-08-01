@@ -98,9 +98,9 @@ window.Router = Backbone.Router.extend({
     viewJob: function (id) {
         // var j = new Job({id: id});
         // $("#content").html(this.DetailJobView({model:j}).el);
-        this.DetailJobView = new DetailJobView();           
-        this.DetailJobView.render();
-        $("#content").html(this.DetailJobView.el);
+        this.JobView = new JobView();           
+        this.JobView.render();
+        $("#content").html(this.JobView.el);
 
     },
     addCompany: function () {
@@ -165,8 +165,8 @@ window.Router = Backbone.Router.extend({
     }
 });
 
-templateLoader.load(["AddJobView","AddProfileView","FooterView","HeaderView","HomeView","JobsView","ListJobsView","LoginView","ProfileView","RegisterView",
-    "DetailJobView","ListCandidateView","ListLibraryView","ForgetPasswordView",
+templateLoader.load(["AddJobView","AddProfileView","FooterView","HeaderView","HomeView","JobView","ListJobsView","LoginView","ProfileView","RegisterView",
+    "ListCandidateView","ListLibraryView","ForgetPasswordView",
     "TestView","AddTestView","EditTestView","AnswerView","GetLinkTestView","ChooseTestView"
     ],
 	function () {
