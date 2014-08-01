@@ -11,7 +11,8 @@ window.Router = Backbone.Router.extend({
         "jobs/add":"addJob",
         "jobs/view/:id":"viewJob",
         "company/add":"addCompany",
-        "company/view/:id":"viewCompany"
+        "company/view/:id":"viewCompany",
+        "company/candidates":"viewCandidates",
 		"candidate/view/:id":"viewCandidate"
     },
 
@@ -89,48 +90,24 @@ window.Router = Backbone.Router.extend({
         this.AddCompanyView = new AddCompanyView();           
         this.AddCompanyView.render();
         $("#content").html(this.AddCompanyView.el);
-    }
+    },
+    viewCandidates: function  () {
+         console.log('viewCandidates');
+         this.ListCandidateView = new ListCandidateView();           
+        this.ListCandidateView.render();
+        $("#content").html(this.ListCandidateView.el);
+    },
 	listCandidate: function () {
         // body...
          console.log('listCandidate');
+         this.ListCandidateView = new ListCandidateView();           
+        this.ListCandidateView.render();
         $("#content").html(this.ListCandidateView.el);
         // this.headerView.select('home-menu');  
-    },
-    
- //    accountsList: function(page) {
- //    	//$('#loadingModal').modal('show');
- //    	$('#loadingimage').show();
- //    	var p = page ? parseInt(page, 10) : 1;
- //        var accountsList = new AccountsCollection();
- //        accountsList.fetch({success: function(){
- //            $("#content").html(new ListView({model: accountsList, page: p}).el);
- //            //$('#loadingModal').modal('hide');
- //            $('#loadingimage').hide();
- //        }});
- //        this.headerView.select('accounts-menu');        
- //    },
-    
- //    accountDetails: function (id) {
- //        var account = new Account({id: id});
- //        account.fetch({success: function(){        	
- //            $("#content").html(new DetailsView({model: account}).el);
- //            $('#lastUpdate').text(convertDate(account.get('modifyDate')));            
- //        }});
-        
- //        //this.headerView.selectMenuItem();
- //    },
-    
- //    addAccount: function() {
- //        var account = new Account();
- //        $('#content').html(new DetailsView({model: account}).el);
- //        //$('#deleteAccountButton').prop('disabled', true);
- //        $('#deleteAccountButton').hide();  
- //        this.headerView.select('add-menu');
-	// },
-    
+    }
 });
 
-templateLoader.load(["AddJobView","AddProfileView","FooterView","HeaderView","HomeView","JobsView","ListJobsView","LoginView","ProfileView","RegisterView","DetailJobView"],
+templateLoader.load(["AddJobView","AddProfileView","FooterView","HeaderView","HomeView","JobsView","ListJobsView","LoginView","ProfileView","RegisterView","DetailJobView","ListCandidateView"],
 	function () {
 		app = new Router();
 		Backbone.history.start();//{pushState: true}
