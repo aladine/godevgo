@@ -14,8 +14,6 @@
 Route::get('/', function()
 {
 	return View::make('index');
-	// return View::make('layouts.application')->nest('content', 'app');
-
 });
 
 // Route group for API versioning

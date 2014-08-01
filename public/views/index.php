@@ -14,8 +14,8 @@
     <link rel="shortcut icon" href="../../assets/ico/favicon.png">	
 
     <title>GoDevGo</title>
-<!--       <link rel='stylesheet' id='jobify-fonts-css' href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Varela+Round&#038;subset=latin' type='text/css' media='all' />
- -->    <link rel='stylesheet' id='jobify-vendor-css' href='css/vendor.min.css' type='text/css' media='all' />
+      <link rel='stylesheet' id='jobify-fonts-css' href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Varela+Round&#038;subset=latin' type='text/css' media='all' />
+    <link rel='stylesheet' id='jobify-vendor-css' href='css/vendor.min.css' type='text/css' media='all' />
     <link rel='stylesheet' id='jobify-entypo-css' href='css/entypo.min.css' type='text/css' media='all' />
     <link rel='stylesheet' id='jobify-css' href='css/style.css' type='text/css' media='all' />
     <link rel='stylesheet' id='jobify-responsive-css' href='css/responsive.min.css' type='text/css' media='all' />
@@ -183,27 +183,31 @@
 </div>
 
 <!-- Placed at the end of the document so the pages load faster -->    
-<script src='lib/jquery/jquery.js'></script>
-<script src='lib/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='js/lib/jquery/jquery.js'></script>
+<script type='text/javascript' src='js/lib/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='js/lib/jquery.json-1.3.js'></script>
+<script type='text/javascript' src='js/lib/jquery.placeholders.2.1.1.min.js'></script>
 
-<script src='lib/underscore-min.js'></script>
-<script src='lib/backbone.js'></script>
+<script type='text/javascript' src='js/lib/gravityforms.js'></script>
 
+
+<script type='text/javascript' src='js/lib/backbone-min.js'></script>
+<script type='text/javascript' src='js/lib/underscore-min.js'></script>
+<!--script src="lib/holder.js"></script-->
 
 <!-- JAVASCRIPT  -->
 <script src="js/utils.js"></script>
 
 <script src="js/models/model.js"></script>
 
+
 <script src="js/views/header.js"></script>
 <script src="js/views/footer.js"></script>
 <script src="js/views/home.js"></script>
 
 <script src="js/main.js"></script>
+
 <script src="js/common.js"></script>
-
-
-
 
 </body>
 </html>
