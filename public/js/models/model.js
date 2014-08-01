@@ -1,3 +1,18 @@
+window.Job = Backbone.Model.extend({
+    
+    urlRoot: "/api/v1/job/",
+    
+    initialize: function (){
+        //map key/value for validation    
+    },
+    defaults: {
+        id: null,
+        name: "Name",
+        description: "Description",
+        modifyDate: ""  
+    }
+});
+
 window.Question = Backbone.Model.extend({
 	
 	urlRoot: "/api/v1/question/",

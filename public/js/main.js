@@ -11,10 +11,16 @@ window.Router = Backbone.Router.extend({
         "jobs": "listJobs",
         "jobs/add":"addJob",
         "jobs/view/:id":"viewJob",
+        "jobs/addTest":"chooseTest",
+        "jobs/getLinkTest":"getLinkTest",
         "company/add":"addCompany",
         "company/view/:id":"viewCompany",
         "company/candidates":"viewCandidates",
 		"candidate/view/:id":"viewCandidate",
+        "questions/edit/:id": "editTest",
+        "questions/view/:id": "viewTest",
+        "questions/add": "createTest",
+        "questions/answer/:id":"answerTest",
 		"library/view":"listLibrary"
     },
 
@@ -90,8 +96,11 @@ window.Router = Backbone.Router.extend({
 
     },
     viewJob: function (id) {
-        var j = new Job({id: id});
-        $("#content").html(this.DetailJobView({model:j}).el);
+        // var j = new Job({id: id});
+        // $("#content").html(this.DetailJobView({model:j}).el);
+        this.DetailJobView = new DetailJobView();           
+        this.DetailJobView.render();
+        $("#content").html(this.DetailJobView.el);
 
     },
     addCompany: function () {
@@ -122,11 +131,44 @@ window.Router = Backbone.Router.extend({
         this.ListLibraryView.render();
         $("#content").html(this.ListLibraryView.el);
         // this.headerView.select('home-menu');  
+    },
+    createTest: function  () {
+        console.log('createTest');
+        this.AddTestView = new AddTestView();           
+        this.AddTestView.render();
+        $("#content").html(this.AddTestView.el);
+    },
+    editTest: function  () {
+        // body...
+    },
+    chooseTest: function () {
+        // body...
+        this.ChooseTestView = new ChooseTestView();           
+        this.ChooseTestView.render();
+        $("#content").html(this.ChooseTestView.el);
+    },
+    viewTest: function  (id) {
+        this.ViewTestView = new TestView();           
+        this.ViewTestView.render();
+        $("#content").html(this.ViewTestView.el);
+    },
+    answerTest: function  (id) {
+         this.AnswerView = new AnswerView();           
+        this.AnswerView.render();
+        $("#content").html(this.AnswerView.el);
+    },
+    getLinkTest: function  () {
+        this.GetLinkTestView = new GetLinkTestView();           
+        this.GetLinkTestView.render();
+        $("#content").html(this.GetLinkTestView.el);
+         // $("#content").html('');
     }
 });
 
 templateLoader.load(["AddJobView","AddProfileView","FooterView","HeaderView","HomeView","JobsView","ListJobsView","LoginView","ProfileView","RegisterView",
-    "DetailJobView","ListCandidateView","ListLibraryView","ForgetPasswordView"],
+    "DetailJobView","ListCandidateView","ListLibraryView","ForgetPasswordView",
+    "TestView","AddTestView","EditTestView","AnswerView","GetLinkTestView","ChooseTestView"
+    ],
 	function () {
 		app = new Router();
 		Backbone.history.start();//{pushState: true}
