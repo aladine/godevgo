@@ -10,8 +10,8 @@ window.Router = Backbone.Router.extend({
         "jobs": "listJobs",
         "jobs/add":"addJob",
         "jobs/view/:id":"viewJob",
-        "company/add":"addCompany",
-        "company/view/:id":"viewCompany"
+        "companies/add":"addCompany",
+        "companies/view/:id":"viewCompany"
     },
 
     initialize: function () {
@@ -55,19 +55,25 @@ window.Router = Backbone.Router.extend({
     },
     listJobs: function () {
         // body...
-         console.log('listJob');
-        $("#content").html(this.ListJobsView.el);
+        console.log('listJob');
+        this.listJobsView = new ListJobsView();           
+        this.listJobsView.render();
+        $("#content").html(this.listJobsView.el);
         // this.headerView.select('home-menu');  
     },
     addJob: function () {
         // body...
         console.log('addJob');
+        this.AddJobView = new AddJobView();           
+        this.AddJobView.render();
         $("#content").html(this.AddJobView.el);
         // this.headerView.select('home-menu');  
 
     },
     viewUser: function (id) {
         var j = new User({id: id});
+        // this.ProfileView = new ProfileView();           
+        // this.ProfileView.render();
         $("#content").html(this.ProfileView({model:j}).el);
 
     },
@@ -79,6 +85,9 @@ window.Router = Backbone.Router.extend({
     addCompany: function () {
         // body...
         console.log('addCompany');
+        this.AddCompanyView = new AddCompanyView();           
+        this.AddCompanyView.render();
+        $("#content").html(this.AddCompanyView.el);
     }
     
  //    accountsList: function(page) {
@@ -114,7 +123,7 @@ window.Router = Backbone.Router.extend({
     
 });
 
-templateLoader.load(["HeaderView","HomeView","FooterView"],
+templateLoader.load(["AddJobView","AddProfileView","FooterView","HeaderView","HomeView","JobsView","ListJobsView","LoginView","ProfileView","RegisterView","DetailJobView"],
 	function () {
 		app = new Router();
 		Backbone.history.start();//{pushState: true}

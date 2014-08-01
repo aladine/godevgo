@@ -169,9 +169,7 @@
 
 	<script src="/js/models/model.js"></script>
 
-	<script src="/js/views/header.js"></script>
-	<script src="/js/views/footer.js"></script>
-	<script src="/js/views/home.js"></script>
+	<script src="/js/views/bundle_views.js"></script>
 
 	<script src="/js/app.js"></script>
 	<script src="/js/main.js"></script>
