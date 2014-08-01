@@ -9,6 +9,7 @@ window.Router = Backbone.Router.extend({
         "users/logout": "doLogOut",
         "jobs": "listJobs",
         "jobs/add":"addJob",
+        "jobs/view/:id":"viewJob",
         "company/add":"addCompany"
     },
 
@@ -58,6 +59,13 @@ window.Router = Backbone.Router.extend({
         // body...
         console.log('addJob');
         $("#content").html(this.AddJobView.el);
+        this.headerView.select('home-menu');  
+
+    },
+    viewJob: function () {
+        // body...
+        // console.log('addJob');
+        // $("#content").html(this.ViewJobView.el);
         this.headerView.select('home-menu');  
 
     },
