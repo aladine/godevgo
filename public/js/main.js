@@ -66,11 +66,14 @@ window.Router = Backbone.Router.extend({
         // this.headerView.select('home-menu');  
 
     },
-    viewJob: function () {
-        // body...
-        // console.log('addJob');
-        // $("#content").html(this.ViewJobView.el);
-        $("#content").html(this.DetailJobView.el);
+    viewUser: function (id) {
+        var j = new User({id: id});
+        $("#content").html(this.ProfileView({model:j}).el);
+
+    },
+    viewJob: function (id) {
+        var j = new Job({id: id});
+        $("#content").html(this.DetailJobView({model:j}).el);
 
     },
     addCompany: function () {
