@@ -281,34 +281,6 @@ window.ListJobsView = Backbone.View.extend({
     showPopup: function() {}
 });
 
-window.LoginView = Backbone.View.extend({
-    initialize: function() {
-        this.render();
-    },
-    events: {
-        "click #mypop": "showPopup"
-    },
-    render: function() {
-        $(this.el).html(this.template());
-        return this;
-    },
-    showPopup: function() {}
-});
-
-window.RegisterView = Backbone.View.extend({
-    initialize: function() {
-        this.render();
-    },
-    events: {
-        "click #mypop": "showPopup"
-    },
-    render: function() {
-        $(this.el).html(this.template());
-        return this;
-    },
-    showPopup: function() {}
-});
-
 window.ProfileView = Backbone.View.extend({
     initialize: function() {
         this.render();
@@ -442,4 +414,46 @@ window.Paginator = Backbone.View.extend({
         }
         return this;
     }
+});
+
+window.LoginView = Backbone.View.extend({
+    initialize: function() {
+        this.render();
+    },
+    events: {
+        "click #mypop": "showPopup"
+    },
+    render: function() {
+        $(this.el).html(this.template());
+        return this;
+    },
+    showPopup: function() {}
+});
+
+window.RegisterView = Backbone.View.extend({
+    initialize: function() {
+        this.render();
+    },
+    events: {
+        "click #mypop": "showPopup"
+    },
+    render: function() {
+        $(this.el).html(this.template());
+        return this;
+    },
+    showPopup: function() {}
+});
+
+window.ForgetPasswordView = Backbone.View.extend({
+    initialize: function() {
+        this.render();
+    },
+    events: {
+        "click #mypop": "showPopup"
+    },
+    render: function() {
+        $(this.el).html(this.template());
+        return this;
+    },
+    showPopup: function() {}
 });

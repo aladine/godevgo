@@ -6,6 +6,7 @@ window.Router = Backbone.Router.extend({
         "users/edit/:id": "editUser",
         "users/view/:id": "viewUser",
         "users/login": "doLogIn",
+        "users/forgetpassword": "doForgetPassword",
         "users/logout": "doLogOut",
         "jobs": "listJobs",
         "jobs/add":"addJob",
@@ -14,7 +15,7 @@ window.Router = Backbone.Router.extend({
         "company/view/:id":"viewCompany",
         "company/candidates":"viewCandidates",
 		"candidate/view/:id":"viewCandidate",
-		"library/view":"viewLibrary"
+		"library/view":"listLibrary"
     },
 
     initialize: function () {
@@ -40,15 +41,23 @@ window.Router = Backbone.Router.extend({
         $("#content").html(this.homeView.el);
         this.headerView.select('home-menu');                                
     },
-
-    doLogIn: function (argument) {
-        // body...
+    doLogIn: function () {
+        this.LoginView = new LoginView();         
+        this.LoginView.render();   
+        $("#content").html(this.LoginView.el);
+    },
+    doForgetPassword: function  () {
+        this.ForgetPasswordView = new ForgetPasswordView();         
+        this.ForgetPasswordView.render();   
+        $("#content").html(this.ForgetPasswordView.el);
     },
     doLogOut: function () {
-        // body...
+        console.log('logout');
     },
     registerUser: function () {
-        // body...
+         this.RegisterView = new RegisterView();         
+        this.RegisterView.render();   
+        $("#content").html(this.RegisterView.el);
     },
     editUser: function () {
         this.editUserView = new EditUserView();         
@@ -117,7 +126,7 @@ window.Router = Backbone.Router.extend({
 });
 
 templateLoader.load(["AddJobView","AddProfileView","FooterView","HeaderView","HomeView","JobsView","ListJobsView","LoginView","ProfileView","RegisterView",
-    "DetailJobView","ListCandidateView","ListLibraryView"],
+    "DetailJobView","ListCandidateView","ListLibraryView","ForgetPasswordView"],
 	function () {
 		app = new Router();
 		Backbone.history.start();//{pushState: true}
