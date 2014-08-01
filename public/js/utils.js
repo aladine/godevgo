@@ -2,9 +2,11 @@
 window.templateLoader = {		
     load: function(views, callback) {
         var deferreds = [];
-        $.each(views, function(index, view) {
+        $.each(views, function( index, view) {
             if (window[view]) {
-                deferreds.push($.get('tpl/' + view + '.html', function(data) {
+            	console.log(view);
+                deferreds.push($.get('/tpl/' + view + '.html', function(data) {
+                	console.log(data);
                     window[view].prototype.template = _.template(data);
                 }, 'html'));
             } else {
