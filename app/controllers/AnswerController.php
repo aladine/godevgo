@@ -9,7 +9,13 @@ class AnswerController extends \BaseController {
 	 */
 	public function index()
 	{
-		//
+		$answer = Answer::where('user_id', Auth::user()->id)->get();
+ 
+	    return Response::json(array(
+	        'error' => false,
+	        'answer' => $answer->toArray()),
+	        200
+	    );
 	}
 
 
@@ -31,12 +37,29 @@ class AnswerController extends \BaseController {
 	 */
 	public function store()
 	{
-		Comment::create(array(
-			'answer' => Input::get('answer'),
-			'question_id' => Input::get('question_id')
-		));
+		$answer = new Answer;
+		// return 'here';
+	    $answer->answer = Request::get('answer');
+	 // 	Log::info($answer->answer);
+		// return 'here';
 
-		return Response::json(array('success' => true));
+	    $answer->description = Request::get('description');
+	    // Log::info($answer->description);
+		// return 'here';
+	    $answer->user_id = Auth::user()->id;
+	 	// Log::warning('Something could be going wrong.');
+
+	    // Validation and Filtering is sorely needed!!
+	    // Seriously, I'm a bad person for leaving that out.
+	
+	    $answer->save();
+	  // Log::info(json_encode($answer));
+	 // return 'dds';
+	    return Response::json(array(
+	        'error' => false,
+	        'answer' => $answer->toArray()),
+	        200
+	    );
 	}
 
 
@@ -48,7 +71,16 @@ class AnswerController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
+		$answer = Answer::where('user_id', Auth::user()->id)
+            ->where('id', $id)
+            ->take(1)
+            ->get();
+ 
+	    return Response::json(array(
+	        'error' => false,
+	        'answer' => $answer->toArray()),
+	        200
+	    );
 	}
 
 
@@ -84,7 +116,15 @@ class AnswerController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		$answer = Answer::where('user_id', Auth::user()->id)->find($id);
+ 
+	    $answer->delete();
+	 
+	    return Response::json(array(
+	        'error' => false,
+	        'message' => 'answer deleted'),
+	        200
+	        );
 	}
 
 
