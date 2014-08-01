@@ -10,8 +10,9 @@ window.Router = Backbone.Router.extend({
         "jobs": "listJobs",
         "jobs/add":"addJob",
         "jobs/view/:id":"viewJob",
-        "companies/add":"addCompany",
-        "companies/view/:id":"viewCompany"
+        "company/add":"addCompany",
+        "company/view/:id":"viewCompany"
+		"candidate/view/:id":"viewCandidate"
     },
 
     initialize: function () {
@@ -89,6 +90,12 @@ window.Router = Backbone.Router.extend({
         this.AddCompanyView.render();
         $("#content").html(this.AddCompanyView.el);
     }
+	listCandidate: function () {
+        // body...
+         console.log('listCandidate');
+        $("#content").html(this.ListCandidateView.el);
+        // this.headerView.select('home-menu');  
+    },
     
  //    accountsList: function(page) {
  //    	//$('#loadingModal').modal('show');
