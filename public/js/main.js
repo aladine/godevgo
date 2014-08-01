@@ -13,7 +13,8 @@ window.Router = Backbone.Router.extend({
         "company/add":"addCompany",
         "company/view/:id":"viewCompany",
         "company/candidates":"viewCandidates",
-		"candidate/view/:id":"viewCandidate"
+		"candidate/view/:id":"viewCandidate",
+		"library/view":"viewLibrary"
     },
 
     initialize: function () {
@@ -104,10 +105,18 @@ window.Router = Backbone.Router.extend({
         this.ListCandidateView.render();
         $("#content").html(this.ListCandidateView.el);
         // this.headerView.select('home-menu');  
+    },
+	listLibrary: function () {
+        // body...
+         console.log('listLibrary');
+         this.ListLibraryView = new ListLibraryView();           
+        this.ListLibraryView.render();
+        $("#content").html(this.ListLibraryView.el);
+        // this.headerView.select('home-menu');  
     }
 });
 
-templateLoader.load(["AddJobView","AddProfileView","FooterView","HeaderView","HomeView","JobsView","ListJobsView","LoginView","ProfileView","RegisterView","DetailJobView","ListCandidateView"],
+templateLoader.load(["AddJobView","AddProfileView","FooterView","HeaderView","HomeView","JobsView","ListJobsView","LoginView","ProfileView","RegisterView","DetailJobView","ListCandidateView","ListLibraryView"],
 	function () {
 		app = new Router();
 		Backbone.history.start();//{pushState: true}
