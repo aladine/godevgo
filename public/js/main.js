@@ -12,6 +12,7 @@ window.Router = Backbone.Router.extend({
         "jobs/view/:id":"viewJob",
         "company/add":"addCompany",
         "company/view/:id":"viewCompany"
+		"candidate/view/:id":"viewCandidate"
     },
 
     initialize: function () {
@@ -80,6 +81,12 @@ window.Router = Backbone.Router.extend({
         // body...
         console.log('addCompany');
     }
+	listCandidate: function () {
+        // body...
+         console.log('listCandidate');
+        $("#content").html(this.ListCandidateView.el);
+        // this.headerView.select('home-menu');  
+    },
     
  //    accountsList: function(page) {
  //    	//$('#loadingModal').modal('show');
