@@ -1,6 +1,6 @@
-window.Account = Backbone.Model.extend({
+window.Question = Backbone.Model.extend({
 	
-	urlRoot: "rest/accounts",
+	urlRoot: "/api/v1/question/",
 	
 	initialize: function () {
         //map key/value for validation 
@@ -47,18 +47,17 @@ window.Account = Backbone.Model.extend({
         picture: "-1",
         modifyDate: ""	
     }
-    
 });
 
-window.AccountsCollection = Backbone.Collection.extend({
-	model: Account,
-	url: "rest/accounts/getAccountList",		
+window.QuestionsCollection = Backbone.Collection.extend({
+	model: Question,
+	url: "/api/v1/questions/",		
     initialize: function(){
-        console.log("Accounts collection initialized");
+        console.log("QuestionsCollection  initialized");
     },
 
 	findByName:function (key) {		
-		var url = 'rest/accounts/findbyname/'+ key;
+		var url = '/api/v1/question/'+ key;
 		console.log('findByName: ' + url);
 		console.log('findByName: ' + key);
 		var self = this;

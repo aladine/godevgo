@@ -1,13 +1,13 @@
 window.HeaderView = Backbone.View.extend({
 
     initialize: function () {
-        this.searchResults = new AccountsCollection();
-        this.searchresultsView = new SearchResultView({model: this.searchResults, className: 'dropdown-menu'});
+        //this.searchResults = new AccountsCollection();
+        // this.searchresultsView = new SearchResultView({model: this.searchResults, className: 'dropdown-menu'});
     },
 
     render: function () {    	
         $(this.el).html(this.template());        
-        $('.dropdown', this.el).append(this.searchresultsView.render().el);           
+        // $('.dropdown', this.el).append(this.searchresultsView.render().el);           
         return this;
     },
 

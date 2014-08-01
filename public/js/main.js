@@ -3,9 +3,13 @@ window.Router = Backbone.Router.extend({
     routes: {
     	"": "home",
         // "accounts": "accountsList",
-        "users/register": "addUser",
+        "users/register": "registerUser",
+        "users/edit/:id": "editUser",
         "users/login": "doLogIn",
         "users/logout": "doLogOut",
+        "jobs": "listJobs",
+        "jobs/add":"addJob",
+        "jobs/view/:id":"viewJob",
         "company/add":"addCompany"
     },
 
@@ -36,9 +40,39 @@ window.Router = Backbone.Router.extend({
     doLogIn: function (argument) {
         // body...
     },
-    doLogOut: function (argument) {
+    doLogOut: function () {
         // body...
     },
+    registerUser: function () {
+        // body...
+    },
+    editUser: function () {
+        // body...
+    },
+    listJobs: function () {
+        // body...
+         console.log('addJob');
+        $("#content").html(this.AddJobView.el);
+        this.headerView.select('home-menu');  
+    },
+    addJob: function () {
+        // body...
+        console.log('addJob');
+        $("#content").html(this.AddJobView.el);
+        this.headerView.select('home-menu');  
+
+    },
+    viewJob: function () {
+        // body...
+        // console.log('addJob');
+        // $("#content").html(this.ViewJobView.el);
+        this.headerView.select('home-menu');  
+
+    },
+    addCompany: function () {
+        // body...
+        console.log('addCompany');
+    }
     
  //    accountsList: function(page) {
  //    	//$('#loadingModal').modal('show');
@@ -76,5 +110,5 @@ window.Router = Backbone.Router.extend({
 templateLoader.load(["HeaderView","HomeView","FooterView"],
 	function () {
 		app = new Router();
-		Backbone.history.start();
+		Backbone.history.start();//{pushState: true}
 	});
