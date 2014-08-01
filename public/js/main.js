@@ -2,15 +2,16 @@ window.Router = Backbone.Router.extend({
 
     routes: {
     	"": "home",
-        // "accounts": "accountsList",
         "users/register": "registerUser",
         "users/edit/:id": "editUser",
+        "users/view/:id": "viewUser",
         "users/login": "doLogIn",
         "users/logout": "doLogOut",
         "jobs": "listJobs",
         "jobs/add":"addJob",
         "jobs/view/:id":"viewJob",
-        "company/add":"addCompany"
+        "company/add":"addCompany",
+        "company/view/:id":"viewCompany"
     },
 
     initialize: function () {
@@ -47,26 +48,29 @@ window.Router = Backbone.Router.extend({
         // body...
     },
     editUser: function () {
-        // body...
+        this.editUserView = new EditUserView();         
+        this.editUserView.render();   
+        $("#content").html(this.editUserView.el);
+        // this.headerView.select('home-menu');  
     },
     listJobs: function () {
         // body...
-         console.log('addJob');
-        $("#content").html(this.AddJobView.el);
-        this.headerView.select('home-menu');  
+         console.log('listJob');
+        $("#content").html(this.ListJobsView.el);
+        // this.headerView.select('home-menu');  
     },
     addJob: function () {
         // body...
         console.log('addJob');
         $("#content").html(this.AddJobView.el);
-        this.headerView.select('home-menu');  
+        // this.headerView.select('home-menu');  
 
     },
     viewJob: function () {
         // body...
         // console.log('addJob');
         // $("#content").html(this.ViewJobView.el);
-        this.headerView.select('home-menu');  
+        $("#content").html(this.DetailJobView.el);
 
     },
     addCompany: function () {
