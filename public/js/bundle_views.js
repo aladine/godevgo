@@ -337,6 +337,20 @@ window.ListCandidateView = Backbone.View.extend({
     showPopup: function() {}
 });
 
+window.ListLibraryView = Backbone.View.extend({
+    initialize: function() {
+        this.render();
+    },
+    events: {
+        "click #mypop": "showPopup"
+    },
+    render: function() {
+        $(this.el).html(this.template());
+        return this;
+    },
+    showPopup: function() {}
+});
+
 window.ListView = Backbone.View.extend({
     initialize: function() {
         this.render();

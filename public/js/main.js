@@ -107,7 +107,8 @@ window.Router = Backbone.Router.extend({
     }
 });
 
-templateLoader.load(["AddJobView","AddProfileView","FooterView","HeaderView","HomeView","JobsView","ListJobsView","LoginView","ProfileView","RegisterView","DetailJobView","ListCandidateView"],
+templateLoader.load(["AddJobView","AddProfileView","FooterView","HeaderView","HomeView","JobsView","ListJobsView","LoginView","ProfileView","RegisterView",
+    "DetailJobView","ListCandidateView","ListLibraryView"],
 	function () {
 		app = new Router();
 		Backbone.history.start();//{pushState: true}
