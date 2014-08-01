@@ -1,24 +1,4 @@
-/*
-Theme Name: Jobify
-Theme URI: http://themeforest.net/item/jobify-wordpress-job-board-theme/5247604?ref=Astoundify
-Author: Astoundify
-Author URI: http://themeforest.net/item/jobify-wordpress-job-board-theme/5247604?ref=Astoundify
-Description: A beautiful job board site completely integrated with WP Job Manager. Use 10+ custom widgets including an interactive map, multiple sliders, testimonials, and more to create a unique homepage in seconds. Also supports all official WP Job Manager addons including Resume Manager, WooCommerce Paid Listings, and more.
-Version: 1.8.2.1
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: white, one-column, right-sidebar, responsive-layout, custom-background, custom-header, theme-options, full-width-template, featured-images, flexible-header, custom-menu, translation-ready
-*/
 
-/**
- * 1.0 Reset
- *
- * Modified from Normalize.css to provide cross-browser consistency and a smart
- * default styling of HTML elements.
- *
- * @see http://git.io/normalize
- * ----------------------------------------------------------------------------
- */
 
 * {
 	-webkit-box-sizing: border-box;
@@ -360,6 +340,7 @@ input[disabled] {
 input[type="checkbox"],
 input[type="radio"] {
 	padding: 0;
+	width: 5%;
 }
 
 input[type="search"] {
@@ -560,7 +541,6 @@ select {
     appearance:         none;
 }
 
-input[type="text"],
 input[type="email"],
 input[type="search"],
 input[type="password"],
@@ -573,6 +553,16 @@ select {
 	border: 1px solid #ccc;
 	border-radius: 6px;
 	width: 100%;
+}
+
+input[type="text"]
+{
+	font-size: 16px;
+	padding: 10px 14px;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	width: 95%;
 }
 
 select {
@@ -2706,7 +2696,7 @@ ul.resumes .resume:hover {
 	margin: 60px auto 0;
 	padding: 0 0 80px;
 	list-style: none;
-	border-bottom: 1px solid #eee;
+	border-top: 1px solid #eee;
 }
 
 .job-stat {
@@ -4111,4 +4101,33 @@ body .pac-container {
 @-keyframes rotate {
   from { transform:rotate(0deg);}
   to { transform:rotate(-360deg);}
+}
+
+
+.pagination .page-numbers
+{
+background: #EEEEEE;
+display: inline-block;
+margin-right: 3px;
+padding: 5px 12px;
+}
+.pagination a:hover {
+color: #FFFFFF;
+background: #00a9e0;
+text-decoration: none;
+}
+.pagination .current
+{
+background: #00a9e0;
+color: #ffffff;
+}
+
+.button.price-button
+{
+display: block;
+margin: 0px auto 18px;
+padding-right: 40px;
+background-position: 94% 50%;
+background-size: auto 20px;
+background-repeat: no-repeat;
 }
