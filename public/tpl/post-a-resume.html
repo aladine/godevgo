@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="vi-VN">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="vi-VN">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="vi-VN">
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+	<title>Post A Resume</title>
+
+	<meta name="viewport" content="initial-scale=1">
+
+	<!--[if lt IE 9]>
+	<script src="js/source/vendor/html5.js" type="text/javascript"></script>
+	<![endif]-->
+
+	<link rel='stylesheet' id='chosen-css'  href='http://demo.astoundify.com/jobify-darker/wp-content/plugins/wp-job-manager-alerts/assets/css/chosen.css' type='text/css' media='all' />
+<link rel='stylesheet' id='job-alerts-frontend-css'  href='http://demo.astoundify.com/jobify-darker/wp-content/plugins/wp-job-manager-alerts/assets/css/frontend.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-ui-css'  href='//ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/smoothness/jquery-ui.css?ver=1.0' type='text/css' media='' />
+<link rel='stylesheet' id='jm-application-deadline-css'  href='http://demo.astoundify.com/jobify-darker/wp-content/plugins/wp-job-manager-application-deadline/assets/css/frontend.css?ver=1.0' type='text/css' media='' />
+<link rel='stylesheet' id='wp-job-manager-applications-frontend-css'  href='http://demo.astoundify.com/jobify-darker/wp-content/plugins/wp-job-manager-applications/assets/css/frontend.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-job-manager-apply-with-linkedin-styles-css'  href='http://demo.astoundify.com/jobify-darker/wp-content/plugins/wp-job-manager-apply-with-linkedin/assets/css/frontend.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-job-manager-bookmarks-frontend-css'  href='http://demo.astoundify.com/jobify-darker/wp-content/plugins/wp-job-manager-bookmarks/assets/css/frontend.css' type='text/css' media='all' />
+<link rel='stylesheet' id='job-manager-indeed-css'  href='http://demo.astoundify.com/jobify-darker/wp-content/plugins/wp-job-manager-indeed-integration/assets/css/frontend.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-paid-listings-packages-css'  href='http://demo.astoundify.com/jobify-darker/wp-content/plugins/wp-job-manager-wc-paid-listings/assets/css/packages.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jobify-fonts-css'  href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Varela+Round&#038;subset=latin' type='text/css' media='all' />
+<link rel='stylesheet' id='jobify-vendor-css'  href='http://demo.astoundify.com/jobify-darker/wp-content/themes/jobify/css/vendor.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jobify-entypo-css'  href='http://demo.astoundify.com/jobify-darker/wp-content/themes/jobify/css/entypo.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jobify-css'  href='http://demo.astoundify.com/jobify-darker/wp-content/themes/jobify/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jobify-responsive-css'  href='http://demo.astoundify.com/jobify-darker/wp-content/themes/jobify/css/responsive.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cpsh-shortcodes-css'  href='http://demo.astoundify.com/jobify-darker/wp-content/plugins/column-shortcodes/assets/css/shortcodes.css?ver=0.6.4' type='text/css' media='all' />
+<link rel='stylesheet' id='sccss_style-css'  href='http://demo.astoundify.com/jobify-darker/?sccss=1&#038;ver=3.9.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://demo.astoundify.com/jobify-darker/wp-includes/js/jquery/jquery.js?ver=1.11.0'></script>
+<script type='text/javascript' src='http://demo.astoundify.com/jobify-darker/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='//gdc.indeed.com/ads/apiresults.js?ver=1.0'></script>
+<script type='text/javascript' src='http://demo.astoundify.com/jobify-darker/wp-content/plugins/gravityforms/js/jquery.json-1.3.js?ver=1.8.3'></script>
+<script type='text/javascript' src='http://demo.astoundify.com/jobify-darker/wp-content/plugins/gravityforms/js/jquery.placeholders.2.1.1.min.js?ver=1.8.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file is not allowed. Must be one of the following: ","delete_file":"Delete this file","in_progress":"in progress","file_exceeds_limit":"File exceeds size limit","illegal_extension":"This type of file is not allowed.","max_reached":"Maximum number of files reached","unknown_error":"There was an problem while saving the file on the server","currently_uploading":"Please wait for the uploading to complete","cancel":"Cancel","cancel_upload":"Cancel this upload","cancelled":"Cancelled"},"vars":{"images_url":"http:\/\/demo.astoundify.com\/jobify-darker\/wp-content\/plugins\/gravityforms\/images"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://demo.astoundify.com/jobify-darker/wp-content/plugins/gravityforms/js/gravityforms.js?ver=1.8.3'></script>
+<script type='text/javascript' src='http://demo.astoundify.com/jobify-darker/wp-includes/js/plupload/plupload.full.min.js?ver=2.1.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://demo.astoundify.com/jobify-darker/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://demo.astoundify.com/jobify-darker/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Find A Job' href='http://demo.astoundify.com/jobify-darker/find-a-job/' />
+<link rel='next' title='Manage Resumes' href='http://demo.astoundify.com/jobify-darker/manage-resumes/' />
+<meta name="generator" content="WordPress 3.9.1" />
+<meta name="generator" content="WooCommerce 2.1.12" />
+<link rel='canonical' href='http://demo.astoundify.com/jobify-darker/post-a-resume/' />
+<link rel='shortlink' href='http://demo.astoundify.com/jobify-darker/?p=2097' />
+<style type="text/css">/* =Responsive Map fix
+-------------------------------------------------------------- */
+.pw_map_canvas img {
+	max-width: none;
+}</style>	<style id="jobify-custom-css">
+		a,
+		.button:hover,
+		a.button-secondary,
+		.load_more_jobs,
+		.load_more_resumes,
+		#wp-submit:hover,
+		.btt:hover i,
+		#submitcomment:hover,
+		#searchsubmit:hover,
+		.jobify_widget_slider .button-secondary:hover,
+		input[type="submit"]:hover,
+		.site-primary-navigation #searchform button,
+		.entry-header a:hover,
+		.entry-title a:hover,
+		.jobify_widget_slider .soliloquy-container a.button-secondary:hover,
+		.entry-content form.wp-job-manager-bookmarks-form a.bookmark-notice {
+			color: #00a9e0;
+		}
+
+		.site-header,
+		.button,
+		.button-secondary:hover,
+		.search_jobs,
+		.search_resumes,
+		.load_more_jobs:hover,
+		.load_more_resumes:hover,
+		.paginate-links .page-numbers:hover,
+		#wp-submit,
+		button.mfp-close,
+		#submitcomment,
+		#searchsubmit,
+		input[type="submit"],
+		.content-grid .featured-image .overlay,
+		.nav-menu-primary .sub-menu,
+		.nav-menu-primary .children,
+		.site-primary-navigation.open,
+		.site-primary-navigation.close,
+		#pmc_mailchimp div input[type="submit"],
+		.mailbag-wrap input[type="submit"],
+		.pricing-table-widget .pricing-table-widget-title,
+		.jobify_widget_price_table_rcp .pricing-table-widget-title,
+		#rcp_registration_form .pricing-table-widget-title,
+		.job-tag,
+		.job-type,
+		.jobify_widget_slider_hero a.button,
+		.mfp-close-btn-in button.mfp-close:hover {
+			background: #00a9e0;
+		}
+
+		.button:hover,
+		a.button-secondary,
+		.load_more_jobs,
+		.load_more_resumes,
+		.paginate-links .page-numbers:hover,
+		input[type="text"]:focus,
+		input[type="email"]:focus,
+		input[type="password"]:focus,
+		input[type="search"]:focus,
+		input[type="number"]:focus,
+		select:focus,
+		textarea:focus,
+		#wp-submit:hover,
+		#submitcomment:hover,
+		#searchsubmit:hover,
+		input[type="submit"]:hover,
+		.entry-content form.wp-job-manager-bookmarks-form a.bookmark-notice {
+			border-color: #00a9e0;
+		}
+
+		.footer-cta {
+			color: #ffffff;
+			background: #00a9e0;
+		}
+
+		ul.job_listings .job_listing:hover,
+		.job_position_featured,
+		li.type-resume:hover {
+			box-shadow: inset 5px 0 0 #00a9e0;
+		}
+
+			</style>
+<style id='job_manager_colors'>
+.job-type.term-5, .job-type.freelance { background-color: #3399cc; } 
+.job-type.term-2, .job-type.full-time { background-color: #01be7e; } 
+.job-type.term-6, .job-type.internship { background-color: #00aabc; } 
+.job-type.term-3, .job-type.part-time { background-color: #f08d3c; } 
+.job-type.term-4, .job-type.temporary { background-color: #e22712; } 
+</style>
+	<style type="text/css">
+		.site-title span {
+		position: absolute;
+		clip: rect(1px, 1px, 1px, 1px);
+	}
+		.site-branding,
+	.site-description,
+	.nav-menu-primary ul li a,
+	.nav-menu-primary li a,
+	.primary-menu-toggle i,
+	.site-primary-navigation .primary-menu-toggle,
+	.site-primary-navigation #searchform input[type="text"] {
+		color: #fff;
+	}
+
+	.nav-menu-primary li.login > a {
+		border-color: #fff;	
+	}
+
+	.site-primary-navigation:not(.open) li.login > a:hover {
+		color: #00a9e0;
+		background: #fff;
+	}
+	</style>
+	<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+</head>
+
+<body class="page page-id-2097 page-template-default custom-background custom-font wp-job-manager-categories wp-resume-manager-categories">
+
+	<div id="page" class="hfeed site">
+
+		<header id="masthead" class="site-header" role="banner">
+            <div class="container">
+                <a href="index.html" title="Jobify Darker" rel="home" class="site-branding">
+                    <h1 class="site-title">
+													<img src="images/jobify-main-logo1.svg" width="" height="" alt="" />
+						
+						<span>Jobify Darker</span>
+					</h1>
+                    <h2 class="site-description">Job Searching Just Got Easy</h2>
+                </a>
+
+                <nav id="site-navigation" class="site-primary-navigation slide-left">
+                    <a href="#" class="primary-menu-toggle"><i class="icon-cancel-circled"></i> <span>Close</span></a>
+                    <form role="search" method="get" id="searchform" action="">
+                        <div>
+                            <label class="screen-reader-text" for="s">Search for:</label>
+                            <input type="text" value="" name="s" id="s" />
+                            <button type="submit" id="searchsubmit"><i class="icon-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="menu-main-menu-container">
+                        <ul id="menu-main-menu" class="nav-menu-primary">
+                            <li id="menu-item-2075" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2075"><a href="find-a-job.html">Jobs</a>
+                            </li>
+                            <li id="menu-item-1897" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1897"><a href="post-a-job.html">Post A Job</a>
+                            </li>
+                            <li id="menu-item-2788" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2788"><a href="find-a-candidate.html">Resumes</a>
+                            </li>
+                            <li id="menu-item-2134" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2134"><a href="post-a-resume.html">Post A Resume</a>
+                            </li>
+                            <li id="register-modal" class="register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><a href="sign-up.html">Sign Up</a>
+                            </li>
+                            <li id="login-modal" class="login menu-item menu-item-type-post_type menu-item-object-page menu-item-1900"><a href="login.html">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <a href="#" class="primary-menu-toggle in-header"><i class="icon-menu"></i></a>
+            </div>
+        </header>
+        <!-- #masthead -->
+
+		<div id="main" class="site-main">
+
+	
+	<header class="page-header">
+		<h1 class="page-title">Post A Resume</h1>
+	</header>
+
+	<div id="primary" class="content-area">
+		<div id="content" class="container" role="main">
+			
+<article id="post-2097" class="post-2097 page type-page status-publish hentry">
+	<div class="entry-content">
+		<form action="" method="post" id="submit-resume-form" class="job-manager-form" enctype="multipart/form-data">
+
+	
+	
+			<fieldset>
+		<label>Have an account?</label>
+		<div class="field account-sign-in">
+			<a class="button" href="http://demo.astoundify.com/jobify-darker/login/">Sign in</a>
+
+			
+				If you don&rsquo;t have an account you can create one below by entering your email address. A password will be automatically emailed to you.
+					</div>
+	</fieldset>
+
+
+	
+	
+		<script src="//platform.linkedin.com/in.js" type="text/javascript">
+	api_key: 752c7t24gziyy8</script>
+
+<fieldset class="import-from-linkedin">
+	<label>LinkedIn</label>
+	<div class="field">
+		<input class="import-from-linkedin" type="button" value="Import from LinkedIn" />
+	</div>
+</fieldset>
+	
+	
+		<!-- Resume Fields -->
+		
+					<fieldset class="fieldset-candidate_name">
+				<label for="candidate_name">Your name</label>
+				<div class="field">
+					<input type="text" class="input-text" name="candidate_name" id="candidate_name" placeholder="Your full name" value="" maxlength="" />
+				</div>
+			</fieldset>
+					<fieldset class="fieldset-candidate_email">
+				<label for="candidate_email">Your email</label>
+				<div class="field">
+					<input type="text" class="input-text" name="candidate_email" id="candidate_email" placeholder="you@yourdomain.com" value="" maxlength="" />
+				</div>
+			</fieldset>
+					<fieldset class="fieldset-candidate_title">
+				<label for="candidate_title">Professional title</label>
+				<div class="field">
+					<input type="text" class="input-text" name="candidate_title" id="candidate_title" placeholder="e.g. &quot;Web Developer&quot;" value="" maxlength="" />
+				</div>
+			</fieldset>
+					<fieldset class="fieldset-candidate_location">
+				<label for="candidate_location">Location</label>
+				<div class="field">
+					<input type="text" class="input-text" name="candidate_location" id="candidate_location" placeholder="e.g. &quot;London, UK&quot;, &quot;New York&quot;, &quot;Houston, TX&quot;" value="" maxlength="" />
+				</div>
+			</fieldset>
+					<fieldset class="fieldset-candidate_photo">
+				<label for="candidate_photo">Photo <small>(optional)</small></label>
+				<div class="field">
+					
+<input type="file" class="input-text" name="candidate_photo" id="candidate_photo" placeholder="" />
+<small class="description">
+			Max. file size: 2 MB.	</small>				</div>
+			</fieldset>
+					<fieldset class="fieldset-resume_category">
+				<label for="resume_category">Resume category</label>
+				<div class="field">
+					<select name="resume_category" id="resume_category">
+			<option value="business-management" >Business Management</option>
+			<option value="designer" >Designer</option>
+			<option value="developer" >Developer</option>
+			<option value="finance" >Finance</option>
+			<option value="marketing" >Marketing</option>
+			<option value="support" >Support</option>
+	</select>				</div>
+			</fieldset>
+					<fieldset class="fieldset-resume_content">
+				<label for="resume_content">Resume Content</label>
+				<div class="field">
+					<div id="wp-resume_content-wrap" class="wp-core-ui wp-editor-wrap tmce-active"><link rel='stylesheet' id='dashicons-css'  href='http://demo.astoundify.com/jobify-darker/wp-includes/css/dashicons.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='editor-buttons-css'  href='http://demo.astoundify.com/jobify-darker/wp-includes/css/editor.min.css' type='text/css' media='all' />
+<div id="wp-resume_content-editor-container" class="wp-editor-container"><textarea class="wp-editor-area" rows="8" autocomplete="off" cols="40" name="resume_content" id="resume_content"></textarea></div>
+</div>
+
+				</div>
+			</fieldset>
+					<fieldset class="fieldset-resume_skills">
+				<label for="resume_skills">Skills <small>(optional)</small></label>
+				<div class="field">
+					<input type="text" class="input-text" name="resume_skills" id="resume_skills" placeholder="Comma separate a list of relevant skills" value="" maxlength="" />
+				</div>
+			</fieldset>
+					<fieldset class="fieldset-links">
+				<label for="links">URL(s) <small>(optional)</small></label>
+				<div class="field">
+					
+<a href="#" class="resume-manager-add-row" data-row="		&lt;div class=&quot;resume-manager-data-row&quot;&gt;
+			&lt;a href=&quot;#&quot; class=&quot;resume-manager-remove-row&quot;&gt;Remove&lt;/a&gt;
+							&lt;fieldset class=&quot;fieldset-name&quot;&gt;
+					&lt;label for=&quot;name&quot;&gt;Name&lt;/label&gt;
+					&lt;div class=&quot;field&quot;&gt;
+						&lt;input type=&quot;text&quot; class=&quot;input-text&quot; name=&quot;link_name[]&quot; id=&quot;name&quot; placeholder=&quot;&quot; value=&quot;&quot; maxlength=&quot;&quot; /&gt;
+					&lt;/div&gt;
+				&lt;/fieldset&gt;
+							&lt;fieldset class=&quot;fieldset-url&quot;&gt;
+					&lt;label for=&quot;url&quot;&gt;URL&lt;/label&gt;
+					&lt;div class=&quot;field&quot;&gt;
+						&lt;input type=&quot;text&quot; class=&quot;input-text&quot; name=&quot;link_url[]&quot; id=&quot;url&quot; placeholder=&quot;http://&quot; value=&quot;&quot; maxlength=&quot;&quot; /&gt;
+					&lt;/div&gt;
+				&lt;/fieldset&gt;
+					&lt;/div&gt;
+	">+ Add URL</a>
+<small class="description">Optionally provide links to any of your websites or social network profiles.</small>				</div>
+			</fieldset>
+					<fieldset class="fieldset-candidate_education">
+				<label for="candidate_education">Education <small>(optional)</small></label>
+				<div class="field">
+					
+<a href="#" class="resume-manager-add-row" data-row="		&lt;div class=&quot;resume-manager-data-row&quot;&gt;
+			&lt;a href=&quot;#&quot; class=&quot;resume-manager-remove-row&quot;&gt;Remove&lt;/a&gt;
+							&lt;fieldset class=&quot;fieldset-location&quot;&gt;
+					&lt;label for=&quot;location&quot;&gt;School name&lt;/label&gt;
+					&lt;div class=&quot;field&quot;&gt;
+						&lt;input type=&quot;text&quot; class=&quot;input-text&quot; name=&quot;candidate_education_location[]&quot; id=&quot;location&quot; placeholder=&quot;&quot; value=&quot;&quot; maxlength=&quot;&quot; /&gt;
+					&lt;/div&gt;
+				&lt;/fieldset&gt;
+							&lt;fieldset class=&quot;fieldset-qualification&quot;&gt;
+					&lt;label for=&quot;qualification&quot;&gt;Qualification(s)&lt;/label&gt;
+					&lt;div class=&quot;field&quot;&gt;
+						&lt;input type=&quot;text&quot; class=&quot;input-text&quot; name=&quot;candidate_education_qualification[]&quot; id=&quot;qualification&quot; placeholder=&quot;&quot; value=&quot;&quot; maxlength=&quot;&quot; /&gt;
+					&lt;/div&gt;
+				&lt;/fieldset&gt;
+							&lt;fieldset class=&quot;fieldset-date&quot;&gt;
+					&lt;label for=&quot;date&quot;&gt;Start/end date&lt;/label&gt;
+					&lt;div class=&quot;field&quot;&gt;
+						&lt;input type=&quot;text&quot; class=&quot;input-text&quot; name=&quot;candidate_education_date[]&quot; id=&quot;date&quot; placeholder=&quot;&quot; value=&quot;&quot; maxlength=&quot;&quot; /&gt;
+					&lt;/div&gt;
+				&lt;/fieldset&gt;
+							&lt;fieldset class=&quot;fieldset-notes&quot;&gt;
+					&lt;label for=&quot;notes&quot;&gt;Notes &lt;small&gt;(optional)&lt;/small&gt;&lt;/label&gt;
+					&lt;div class=&quot;field&quot;&gt;
+						&lt;textarea cols=&quot;20&quot; rows=&quot;3&quot; class=&quot;input-text&quot; name=&quot;candidate_education_notes[]&quot; id=&quot;notes&quot; placeholder=&quot;&quot; maxlength=&quot;&quot;&gt;&lt;/textarea&gt;
+					&lt;/div&gt;
+				&lt;/fieldset&gt;
+					&lt;/div&gt;
+	">+ Add Education</a>
+				</div>
+			</fieldset>
+					<fieldset class="fieldset-candidate_experience">
+				<label for="candidate_experience">Experience <small>(optional)</small></label>
+				<div class="field">
+					
+<a href="#" class="resume-manager-add-row" data-row="		&lt;div class=&quot;resume-manager-data-row&quot;&gt;
+			&lt;a href=&quot;#&quot; class=&quot;resume-manager-remove-row&quot;&gt;Remove&lt;/a&gt;
+							&lt;fieldset class=&quot;fieldset-employer&quot;&gt;
+					&lt;label for=&quot;employer&quot;&gt;Employer&lt;/label&gt;
+					&lt;div class=&quot;field&quot;&gt;
+						&lt;input type=&quot;text&quot; class=&quot;input-text&quot; name=&quot;candidate_experience_employer[]&quot; id=&quot;employer&quot; placeholder=&quot;&quot; value=&quot;&quot; maxlength=&quot;&quot; /&gt;
+					&lt;/div&gt;
+				&lt;/fieldset&gt;
+							&lt;fieldset class=&quot;fieldset-job_title&quot;&gt;
+					&lt;label for=&quot;job_title&quot;&gt;Job Title&lt;/label&gt;
+					&lt;div class=&quot;field&quot;&gt;
+						&lt;input type=&quot;text&quot; class=&quot;input-text&quot; name=&quot;candidate_experience_job_title[]&quot; id=&quot;job_title&quot; placeholder=&quot;&quot; value=&quot;&quot; maxlength=&quot;&quot; /&gt;
+					&lt;/div&gt;
+				&lt;/fieldset&gt;
+							&lt;fieldset class=&quot;fieldset-date&quot;&gt;
+					&lt;label for=&quot;date&quot;&gt;Start/end date&lt;/label&gt;
+					&lt;div class=&quot;field&quot;&gt;
+						&lt;input type=&quot;text&quot; class=&quot;input-text&quot; name=&quot;candidate_experience_date[]&quot; id=&quot;date&quot; placeholder=&quot;&quot; value=&quot;&quot; maxlength=&quot;&quot; /&gt;
+					&lt;/div&gt;
+				&lt;/fieldset&gt;
+							&lt;fieldset class=&quot;fieldset-notes&quot;&gt;
+					&lt;label for=&quot;notes&quot;&gt;Notes &lt;small&gt;(optional)&lt;/small&gt;&lt;/label&gt;
+					&lt;div class=&quot;field&quot;&gt;
+						&lt;textarea cols=&quot;20&quot; rows=&quot;3&quot; class=&quot;input-text&quot; name=&quot;candidate_experience_notes[]&quot; id=&quot;notes&quot; placeholder=&quot;&quot; maxlength=&quot;&quot;&gt;&lt;/textarea&gt;
+					&lt;/div&gt;
+				&lt;/fieldset&gt;
+					&lt;/div&gt;
+	">+ Add Experience</a>
+				</div>
+			</fieldset>
+					<fieldset class="fieldset-resume_file">
+				<label for="resume_file">Resume file <small>(optional)</small></label>
+				<div class="field">
+					
+<input type="file" class="input-text" name="resume_file" id="resume_file" placeholder="" />
+<small class="description">
+			Optionally upload your resume for employers to view. Max. file size: 2 MB.	</small>				</div>
+			</fieldset>
+		
+		
+		<p>
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="725d24765f" /><input type="hidden" name="_wp_http_referer" value="/jobify-darker/post-a-resume/" />			<input type="hidden" name="resume_manager_form" value="submit-resume" />
+			<input type="hidden" name="resume_id" value="0" />
+			<input type="hidden" name="job_id" value="0" />
+			<input type="submit" name="submit_resume" class="button" value="Preview resume &rarr;" />
+		</p>
+
+	
+	</form>
+	</div>
+</article><!-- #post -->			
+<div class="row">
+	<div id="comments" class="comments-area col-md-9 col-md-offset-3">
+
+		
+				
+	</div><!-- #comments -->
+</div>		</div><!-- #content -->
+
+			<div class="paginate-links container">
+			</div>
+	</div><!-- #primary -->
+
+	
+
+		</div>
+		<!-- #main -->
+
+            <div class="footer-cta">
+                <div class="container">
+                    <h2>Got A Question? Get In Touch</h2>
+                    <p>We're here to help. Check out our FAQs, send us an email or call us at 1 800 555 5555</p>
+                </div>
+            </div>
+
+            <footer id="colophon" class="site-footer" role="contentinfo">
+                <div class="footer-widgets">
+                    <div class="container">
+                        <div class="row">
+                            <aside id="text-2" class="footer-widget widget_text col-md-3 col-sm-6 col-xs-12">
+                                <div class="textwidget">
+                                    <embed src="images/jobify-main.svg" type="image/svg+xml" />
+                                    <br></br>
+                                    Subscribe to our newsletter
+                                    <form id="pmc_mailchimp" action="" method="post">
+
+                                        <div>
+                                            <label for="pmc_email">Enter your email</label>
+                                            <br/>
+                                            <input name="pmc_email" id="pmc_email" type="text" placeholder="Email Address" />
+                                        </div>
+                                        <div>
+                                            <input type="hidden" name="redirect" value="?submitted=yes" />
+                                            <input type="hidden" name="action" value="pmc_signup" />
+                                            <input type="hidden" name="pmc_list_id" value="" />
+                                            <input type="submit" value="Sign Up" />
+                                        </div>
+                                    </form>
+
+                                    <br></br>
+                                    <br></br>
+                                    Job Searching Just Got Easy. Use Jobify to run a hiring site and earn money in the process!</div>
+                            </aside>
+                            <aside id="pages-2" class="footer-widget widget_pages col-md-3 col-sm-6 col-xs-12">
+                                <h3 class="footer-widget-title">Site Map</h3>	
+                                <ul>
+                                    <li class="page_item page-item-703"><a href="/">Blog</a>
+                                    </li>
+                                    <li class="page_item page-item-1882"><a href="/">Contact</a>
+                                    </li>
+                                    <li class="page_item page-item-2069"><a href="/">Find A Job</a>
+                                    </li>
+                                    <li class="page_item page-item-1915"><a href="/">Manage Jobs</a>
+                                    </li>
+                                    <li class="page_item page-item-2124"><a href="/">Manage Resumes</a>
+                                    </li>
+                                    <li class="page_item page-item-14"><a href="/">Post A Job</a>
+                                    </li>
+                                    <li class="page_item page-item-2097"><a href="/">Post A Resume</a>
+                                    </li>
+                                    <li class="page_item page-item-1760"><a href="/">Terms and Conditions</a>
+                                    </li>
+                                    <li class="page_item page-item-1719"><a href="/">Testimonials</a>
+                                    </li>
+                                </ul>
+                            </aside>
+                            <aside id="recent-posts-2" class="footer-widget widget_recent_entries col-md-3 col-sm-6 col-xs-12">
+                                <h3 class="footer-widget-title">Recent News Articles</h3>	
+                                <ul>
+                                    <li>
+                                        <a href="/">blog</a>
+                                        <span class="post-date">July 22, 2014</span>
+                                    </li>
+                                    <li>
+                                        <a href="/">blog</a>
+                                        <span class="post-date">July 22, 2014</span>
+                                    </li>
+                                    <li>
+                                        <a href="/">blog</a>
+                                        <span class="post-date">July 22, 2014</span>
+                                    </li>
+                                </ul>
+                            </aside>
+                            <aside id="text-3" class="footer-widget widget_text col-md-3 col-sm-6 col-xs-12">
+                                <h3 class="footer-widget-title">EUS Offices</h3>	
+                                <div class="textwidget">EUS Inc. VietNam
+                                    <br/>182 Le Dai Hanh st., Ward 15, Dist. 11, Ho Chi Minh City VN 70000
+                                    <br></br>
+                                    EUS Inc. VietNam
+                                    <br/>182 Le Dai Hanh st., Ward 15, Dist. 11, Ho Chi Minh City VN 70000</div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    <div class="container">
+                        <div class="site-info">
+                            &copy; 2014 EUS Team &mdash; All Rights Reserved</div>
+                        <!-- .site-info -->
+
+                        <a href="#top" class="btt"><i class="icon-up-circled"></i></a>
+
+                        <div class="footer-social"><a href="http://facebook.com/"><span class="screen-reader-text">facebook</span></a>
+                            <a href="http://twitter.com/"><span class="screen-reader-text">twitter</span></a>
+                            <a href="https://plus.google.com/"><span class="screen-reader-text">google</span></a>
+                            <a href="http://instagram.com/"><span class="screen-reader-text">instagram</span></a>
+                            <a href="https://pinterest.com/"><span class="screen-reader-text">pinterest</span></a>
+                            <a href="https://vimeo.com/"><span class="screen-reader-text">vimeo</span></a>
+                            <a href="http://www.linkedin.com"><span class="screen-reader-text">linkedin</span></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- #colophon -->
+        </div>
+        <!-- #page -->
+
+
+        <div id="login-modal-wrap" class="modal-login modal">
+            <h2 class="modal-title">Login</h2>
+
+
+            <form name="loginform" id="loginform" action="login.php" method="post">
+
+                <p class="login-username">
+                    <label for="user_login">Username</label>
+                    <input type="text" name="log" id="user_login" class="input" value="" size="20" />
+                </p>
+                <p class="login-password">
+                    <label for="user_pass">Password</label>
+                    <input type="password" name="pwd" id="user_pass" class="input" value="" size="20" />
+                </p>
+                <p class="has-account"><i class="icon-help-circled"></i>  <a href="">Forgot Password?</a>
+                </p>
+                <p class="login-remember">
+                    <label>
+                        <input name="rememberme" type="checkbox" id="rememberme" value="forever" checked="checked" />Remember Me</label>
+                </p>
+                <p class="login-submit">
+                    <input type="submit" name="wp-submit" id="wp-submit" class="button-primary" value="Sign In" />
+                    <input type="hidden" name="redirect_to" value="url_link_home" />
+                </p>
+
+            </form>
+        </div>
+
+        <div id="register-modal-wrap" class="modal-register modal">
+            <h2 class="modal-title">Sign Up</h2>
+
+            <form action="/sign-up/" method="post" id="register-form" class="job-manager-form" enctype="multipart/form-data">
+                <fieldset class="fieldset-">
+                    <label for="">Username</label>
+                    <div class="field">
+                        <input type="text" class="input-text" name="nicename" id="nicename" placeholder="" value="" maxlength="" />
+                    </div>
+                </fieldset>
+                <fieldset class="fieldset-">
+                    <label for="">Email Address</label>
+                    <div class="field">
+                        <input type="text" class="input-text" name="email" id="email" placeholder="email@example.com" value="" maxlength="" />
+                    </div>
+                </fieldset>
+                <fieldset class="fieldset-">
+                    <label for="">Password</label>
+                    <div class="field">
+                        <input type="password" class="input-text" name="password" id="password" placeholder="" value="" maxlength="" />
+                    </div>
+                </fieldset>
+
+                <fieldset class="fieldset-">
+                    <label for="">About You</label>
+                    <div class="field">
+                        <select name="role" id="role">
+                            <option value="none">&mdash;Select&mdash;</option>
+                            <option value="employer">I&#039;m an employer looking to hire</option>
+                            <option value="candidate">I&#039;m a candidate looking for a job</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <p class="has-account" id="login-modal"><i class="icon-help-circled"></i> Already have an account? <a href="login">Login</a>
+                </p>
+
+                <p class="register-submit">
+                    <input type="hidden" id="_wpnonce" name="_wpnonce" value="d34b27d262" />
+                    <input type="hidden" name="_wp_http_referer" value="/index.html" />
+                    <input type="hidden" name="job_manager_form" value="register" />
+                    <input type="submit" name="submit_register" class="button button-medium" value="Register" />
+                </p>
+            </form>
+        </div>
+<script type='text/javascript' src='js/vendor.min.js'></script>
+
+<script type='text/javascript' src='js/jobify.min.js'></script>
+<script type='text/javascript' src='js/jobify-map.min.js'></script>
+<script type='text/javascript' src='js/jquery/ui/jquery.ui.core.min.js'></script>
+<script type='text/javascript' src='js/jquery/ui/jquery.ui.widget.min.js'></script>
+<script type='text/javascript' src='js/jquery/ui/jquery.ui.mouse.min.js'></script>
+<script type='text/javascript' src='js/jquery/ui/jquery.ui.sortable.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var resume_manager_resume_submission = {"i18n_navigate":"If you wish to edit the posted details use the \"edit resume\" button instead, otherwise changes may be lost."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='js/resume-submission.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wordCountL10n = {"type":"w"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='js/word-count.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var userSettings = {"url":"\/","uid":"0","time":"1406804717"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='js/utils.min.js'></script>
+<script type='text/javascript' src='js/editor.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpLinkL10n = {"title":"Insert\/edit link","update":"Update","save":"Add Link","noTitle":"(no title)","noMatchesFound":"No matches found."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='js/wplink.min.js'></script>
+
+		<script type="text/javascript">
+		tinyMCEPreInit = {
+			baseURL: "",
+			suffix: ".min",
+						mceInit: {'resume_content':{theme:"modern",skin:"lightgray",language:"en",formats:{
+						alignleft: [
+							{selector: 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li', styles: {textAlign:'left'}},
+							{selector: 'img,table,dl.wp-caption', classes: 'alignleft'}
+						],
+						aligncenter: [
+							{selector: 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li', styles: {textAlign:'center'}},
+							{selector: 'img,table,dl.wp-caption', classes: 'aligncenter'}
+						],
+						alignright: [
+							{selector: 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li', styles: {textAlign:'right'}},
+							{selector: 'img,table,dl.wp-caption', classes: 'alignright'}
+						],
+						strikethrough: {inline: 'del'}
+					},relative_urls:false,remove_script_host:false,convert_urls:false,browser_spellcheck:true,fix_list_elements:true,entities:"38,amp,60,lt,62,gt",entity_encoding:"raw",keep_styles:false,paste_webkit_styles:"font-weight font-style color",preview_styles:"font-family font-size font-weight font-style text-decoration text-transform",wpeditimage_disable_captions:false,wpeditimage_html5_captions:false,plugins:"paste",content_css:"http://demo.astoundify.com/jobify-darker/wp-includes/css/dashicons.min.css,http://demo.astoundify.com/jobify-darker/wp-includes/js/mediaelement/mediaelementplayer.min.css,http://demo.astoundify.com/jobify-darker/wp-includes/js/mediaelement/wp-mediaelement.css,http://demo.astoundify.com/jobify-darker/wp-includes/js/tinymce/skins/wordpress/wp-content.css,http://fonts.googleapis.com/css?family=Montserrat:400%2C700|Varela+Round&subset=latin",selector:"#resume_content",resize:"vertical",menubar:false,wpautop:true,indent:false,toolbar1:"bold,italic,strikethrough,bullist,numlist,blockquote,hr,alignleft,aligncenter,alignright,link,unlink,wp_more,spellchecker,fullscreen,wp_adv",toolbar2:"formatselect,underline,alignjustify,forecolor,pastetext,removeformat,charmap,outdent,indent,undo,redo,wp_help",toolbar3:"",toolbar4:"",tabfocus_elements:":prev,:next",body_class:"resume_content post-type-page post-status-publish",paste_as_text:true,paste_auto_cleanup_on_paste:true,paste_remove_spans:true,paste_remove_styles:true,paste_remove_styles_if_webkit:true,paste_strip_class_attributes:true,theme_advanced_buttons1:"bold,italic,|,bullist,numlist,|,undo,redo,|,|,code",theme_advanced_buttons2:"",theme_advanced_buttons3:"",theme_advanced_buttons4:""}},
+			qtInit: {},
+			ref: {plugins:"charmap,hr,media,paste,tabfocus,textcolor,fullscreen,wordpress,wpeditimage,wpgallery,wplink,wpdialogs,wpview,image",theme:"modern",language:"en"},
+			load_ext: function(url,lang){var sl=tinymce.ScriptLoader;sl.markDone(url+'/langs/'+lang+'.js');sl.markDone(url+'/langs/'+lang+'_dlg.js');}
+		};
+		</script>
+		<script type='text/javascript' src='js/tinymce/tinymce.min.js'></script>
+<script type='text/javascript' src='js/tinymce/plugins/compat3x/plugin.min.js'></script>
+<script type='text/javascript'>
+tinymce.addI18n( 'en', {"New document":"New document","Formats":"Formats","Headings":"Headings","Heading 1":"Heading 1","Heading 2":"Heading 2","Heading 3":"Heading 3","Heading 4":"Heading 4","Heading 5":"Heading 5","Heading 6":"Heading 6","Blocks":"Blocks","Paragraph":"Paragraph","Blockquote":"Blockquote","Div":"Div","Pre":"Pre","Address":"Address","Inline":"Inline","Underline":"Underline","Strikethrough":"Strikethrough","Subscript":"Subscript","Superscript":"Superscript","Clear formatting":"Clear formatting","Bold":"Bold","Italic":"Italic","Code":"Code","Source code":"Source code","Font Family":"Font Family","Font Sizes":"Font Sizes","Align center":"Align center","Align right":"Align right","Align left":"Align left","Justify":"Justify","Increase indent":"Increase indent","Decrease indent":"Decrease indent","Cut":"Cut","Copy":"Copy","Paste":"Paste","Select all":"Select all","Undo":"Undo","Redo":"Redo","Ok":"OK","Cancel":"Cancel","Close":"Close","Visual aids":"Visual aids","Bullet list":"Bulleted list","Numbered list":"Numbered list","Square":"Square","Default":"Default","Circle":"Circle","Disc":"Disc","Lower Greek":"Lower Greek","Lower Alpha":"Lower Alpha","Upper Alpha":"Upper Alpha","Upper Roman":"Upper Roman","Lower Roman":"Lower Roman","Name":"Name","Anchor":"Anchor","Anchors":"Anchors","Document properties":"Document properties","Robots":"Robots","Title":"Title","Keywords":"Keywords","Encoding":"Encoding","Description":"Description","Author":"Author","Insert\/edit image":"Insert\/edit image","General":"General","Advanced":"Advanced","Source":"Source","Border":"Border","Constrain proportions":"Constrain proportions","Vertical space":"Vertical space","Image description":"Image description","Style":"Style","Dimensions":"Dimensions","Insert image":"Insert image","Insert date\/time":"Insert date\/time","Insert\/edit video":"Insert\/edit video","Poster":"Poster","Alternative source":"Alternative source","Paste your embed code below:":"Paste your embed code below:","Insert video":"Insert video","Embed":"Embed","Special character":"Special character","Right to left":"Right to left","Left to right":"Left to right","Emoticons":"Emoticons","Nonbreaking space":"Nonbreaking space","Page break":"Page break","Paste as text":"Paste as text","Preview":"Preview","Print":"Print","Save":"Save","Fullscreen":"Fullscreen","Horizontal line":"Horizontal line","Horizontal space":"Horizontal space","Restore last draft":"Restore last draft","Insert\/edit link":"Insert\/edit link","Remove link":"Remove link","Could not find the specified string.":"Could not find the specified string.","Replace":"Replace","Next":"Next","Prev":"Prev","Whole words":"Whole words","Find and replace":"Find and replace","Replace with":"Replace with","Find":"Find","Replace all":"Replace all","Match case":"Match case","Spellcheck":"Check Spelling","Finish":"Finish","Ignore all":"Ignore all","Ignore":"Ignore","Insert table":"Insert table","Delete table":"Delete table","Table properties":"Table properties","Row properties":"Table row properties","Cell properties":"Table cell properties","Row":"Row","Rows":"Rows","Column":"Column","Cols":"Cols","Cell":"Cell","Header cell":"Header cell","Header":"Header","Body":"Body","Footer":"Footer","Insert row before":"Insert row before","Insert row after":"Insert row after","Insert column before":"Insert column before","Insert column after":"Insert column after","Paste row before":"Paste table row before","Paste row after":"Paste table row after","Delete row":"Delete row","Delete column":"Delete column","Cut row":"Cut table row","Copy row":"Copy table row","Merge cells":"Merge table cells","Split cell":"Split table cell","Height":"Height","Width":"Width","Caption":"Caption","Alignment":"Alignment","Left":"Left","Center":"Center","Right":"Right","None":"None","Row group":"Row group","Column group":"Column group","Row type":"Row type","Cell type":"Cell type","Cell padding":"Cell padding","Cell spacing":"Cell spacing","Scope":"Scope","Insert template":"Insert template","Templates":"Templates","Background color":"Background color","Text color":"Text color","Show blocks":"Show blocks","Show invisible characters":"Show invisible characters","Words: {0}":"Words: {0}","Paste is now in plain text mode. Contents will now be pasted as plain text until you toggle this option off.":"Paste is now in plain text mode. Contents will now be pasted as plain text until you toggle this option off.\n\nIf you\u2019re looking to paste rich content from Microsoft Word, try turning this option off. The editor will clean up text pasted from Word automatically.","Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-0 for help":"Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-0 for help","You have unsaved changes are you sure you want to navigate away?":"The changes you made will be lost if you navigate away from this page.","Your browser doesn't support direct access to the clipboard. Please use the Ctrl+X\/C\/V keyboard shortcuts instead.":"Your browser does not support direct access to the clipboard. Please use the Ctrl+X\/C\/V keyboard shortcuts instead.","Insert":"Insert","File":"File","Edit":"Edit","Tools":"Tools","View":"View","Table":"Table","Format":"Format","Keyboard Shortcuts":"Keyboard Shortcuts","Toolbar Toggle":"Toolbar Toggle","Insert Read More tag":"Insert Read More tag","Distraction Free Writing":"Distraction Free Writing"});
+tinymce.ScriptLoader.markDone( 'js/tinymce/langs/en.js' );
+</script>
+		<script type="text/javascript">
+		var ajaxurl = "/jobify-darker/wp-admin/admin-ajax.php";
+		( function() {
+			var init, edId, qtId, firstInit, wrapper;
+
+			if ( typeof tinymce !== 'undefined' ) {
+				for ( edId in tinyMCEPreInit.mceInit ) {
+					if ( firstInit ) {
+						init = tinyMCEPreInit.mceInit[edId] = tinymce.extend( {}, firstInit, tinyMCEPreInit.mceInit[edId] );
+					} else {
+						init = firstInit = tinyMCEPreInit.mceInit[edId];
+					}
+
+					wrapper = tinymce.DOM.select( '#wp-' + edId + '-wrap' )[0];
+
+					if ( ( tinymce.DOM.hasClass( wrapper, 'tmce-active' ) || ! tinyMCEPreInit.qtInit.hasOwnProperty( edId ) ) &&
+						! init.wp_skip_init ) {
+
+						try {
+							tinymce.init( init );
+
+							if ( ! window.wpActiveEditor ) {
+								window.wpActiveEditor = edId;
+							}
+						} catch(e){}
+					}
+				}
+			}
+
+			if ( typeof quicktags !== 'undefined' ) {
+				for ( qtId in tinyMCEPreInit.qtInit ) {
+					try {
+						quicktags( tinyMCEPreInit.qtInit[qtId] );
+
+						if ( ! window.wpActiveEditor ) {
+							window.wpActiveEditor = qtId;
+						}
+					} catch(e){};
+				}
+			}
+
+			if ( typeof jQuery !== 'undefined' ) {
+				jQuery('.wp-editor-wrap').on( 'click.wp-editor', function() {
+					if ( this.id ) {
+						window.wpActiveEditor = this.id.slice( 3, -5 );
+					}
+				});
+			} else {
+				for ( qtId in tinyMCEPreInit.qtInit ) {
+					document.getElementById( 'wp-' + qtId + '-wrap' ).onclick = function() {
+						window.wpActiveEditor = this.id.slice( 3, -5 );
+					}
+				}
+			}
+		}());
+		</script>
+				<div id="wp-link-backdrop" style="display: none"></div>
+		<div id="wp-link-wrap" class="wp-core-ui" style="display: none">
+		<form id="wp-link" tabindex="-1">
+		<input type="hidden" id="_ajax_linking_nonce" name="_ajax_linking_nonce" value="91989e1083" />		<div id="link-modal-title">
+			Insert/edit link			<div id="wp-link-close" tabindex="0"></div>
+	 	</div>
+		<div id="link-selector">
+			<div id="link-options">
+				<p class="howto">Enter the destination URL</p>
+				<div>
+					<label><span>URL</span><input id="url-field" type="text" name="href" /></label>
+				</div>
+				<div>
+					<label><span>Title</span><input id="link-title-field" type="text" name="linktitle" /></label>
+				</div>
+				<div class="link-target">
+					<label><span>&nbsp;</span><input type="checkbox" id="link-target-checkbox" /> Open link in a new window/tab</label>
+				</div>
+			</div>
+			<p class="howto" id="wp-link-search-toggle">Or link to existing content</p>
+			<div id="search-panel">
+				<div class="link-search-wrapper">
+					<label>
+						<span class="search-label">Search</span>
+						<input type="search" id="search-field" class="link-search-field" autocomplete="off" />
+						<span class="spinner"></span>
+					</label>
+				</div>
+				<div id="search-results" class="query-results">
+					<ul></ul>
+					<div class="river-waiting">
+						<span class="spinner"></span>
+					</div>
+				</div>
+				<div id="most-recent-results" class="query-results">
+					<div class="query-notice"><em>No search term specified. Showing recent items.</em></div>
+					<ul></ul>
+					<div class="river-waiting">
+						<span class="spinner"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="submitbox">
+			<div id="wp-link-update">
+				<input type="submit" value="Add Link" class="button button-primary" id="wp-link-submit" name="wp-link-submit">
+			</div>
+			<div id="wp-link-cancel">
+				<a class="submitdelete deletion" href="#">Cancel</a>
+			</div>
+		</div>
+		</form>
+		</div>
+		</body>
+</html>

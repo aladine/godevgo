@@ -1,0 +1,41 @@
+<?php
+
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateUsersTable extends Migration {
+
+	/**
+	 * Run the migrations.
+	 *
+	 * @return void
+	 */
+	public function up()
+	{
+		Schema::table('users', function(Blueprint $table)
+		{
+			$table->increments('id');
+	        $table->string('username')->unique();
+	        $table->string('name');
+	        $table->enum('role',array('candidate','employer','admin'));
+	        $table->enum('gender',array('male','female'));
+	        $table->string('avatar_url');
+	        $table->string('password');
+	        $table->timestamps();
+		});
+	}
+
+	/**
+	 * Reverse the migrations.
+	 *
+	 * @return void
+	 */
+	public function down()
+	{
+		Schema::table('users', function(Blueprint $table)
+		{
+			//
+		});
+	}
+
+}

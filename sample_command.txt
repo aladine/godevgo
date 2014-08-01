@@ -1,0 +1,90 @@
+http://scotch.io/tutorials/php/create-a-laravel-and-angular-single-page-comment-application#testing-the-application
+
+cd /path/to/my/repo
+git remote add origin git@bitbucket.org:aladine/godevgo.git
+git push -u origin --all # pushes up the repo and its refs for the first time
+git push -u origin --tags # pushes up any tags
+
+
+
+
+
+curl -i --user firstuser:first_password -d 'question=what&description=herer' localhost:8000/api/v1/question
+curl --user firstuser:first_password localhost:8000/api/v1/question
+curl --user firstuser:first_password localhost:8000/api/v1/question
+curl -i --user firstuser:first_password -d 'question=What' localhost:8000/api/\\
+
+
+curl -i -X PUT --user seconduser:second_password -d 'question=thiisnewqiz&description=hoho' localhost:8000/api/v1/question/5
+
+curl -i --user firstuser:first_password -d 'question=thiisnewqiz&description=hoho' localhost:8000/api/v1/question
+
+curl -i --user seconduser:second_password -d 'question=thiisnewqiz&description=hoho' localhost:8000/api/v1/question
+
+$file = Input::file('file');
+$destinationPath = 'uploads';
+// If the uploads fail due to file system, you can try doing public_path().'/uploads' 
+$filename = str_random(12);
+//$filename = $file->getClientOriginalName();
+//$extension =$file->getClientOriginalExtension(); 
+$upload_success = Input::file('file')->move($destinationPath, $filename);
+
+if( $upload_success ) {
+   return Response::json('success', 200);
+} else {
+   return Response::json('error', 400);
+}
+
+
+User
+role
+name
+username
+avatar_url
+
+
+
+UserInfo
+resume_url
+github_url
+website
+
+UserSkill
+skill_id
+user_id
+rating
+
+Skill
+name
+
+
+Company
+name
+website
+
+
+Job
+name
+description
+deadline
+language
+
+UserJob
+user_id
+job_id
+total_score
+status 
+
+Question
+job_id
+question
+description
+duration
+
+Answer
+user_id
+question_id
+answer
+score
+
+
