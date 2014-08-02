@@ -2,7 +2,7 @@ window.AddJobView = Backbone.View.extend({
 
     initialize: function () {
         this.render();
-    },
+    }, 
     events:{        
         "submit form": "showPopup",
         'focusout input[name="company_tagline"]': "updateList"        	

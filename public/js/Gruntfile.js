@@ -26,7 +26,7 @@ module.exports = function(grunt) {
                 // }         
             },
             compress:{
-                files: ['*.js','views/*.js'],
+                files: ['*.js','views/*.js','!bundle.js','!bundle_views.js'],
                 tasks: ['uglify:prod']
             },
             ug:{
