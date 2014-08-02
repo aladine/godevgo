@@ -44,18 +44,19 @@ window.Router = Backbone.Router.extend({
         } else {
             this.homeView.delegateEvents(); // delegate events when the view is recycled
         }                
-        $("#content").html(this.homeView.el);
+        $("#main_content").html(this.homeView.el);
+
         this.headerView.select('home-menu');                                
     },
     doLogIn: function () {
         this.LoginView = new LoginView();         
         this.LoginView.render();   
-        $("#content").html(this.LoginView.el);
+        $("#main_content").html(this.LoginView.el);
     },
     doForgetPassword: function  () {
         this.ForgetPasswordView = new ForgetPasswordView();         
         this.ForgetPasswordView.render();   
-        $("#content").html(this.ForgetPasswordView.el);
+        $("#main_content").html(this.ForgetPasswordView.el);
     },
     doLogOut: function () {
         console.log('logout');
@@ -63,12 +64,12 @@ window.Router = Backbone.Router.extend({
     registerUser: function () {
          this.RegisterView = new RegisterView();         
         this.RegisterView.render();   
-        $("#content").html(this.RegisterView.el);
+        $("#main_content").html(this.RegisterView.el);
     },
     editUser: function () {
         this.editUserView = new EditUserView();         
         this.editUserView.render();   
-        $("#content").html(this.editUserView.el);
+        $("#main_content").html(this.editUserView.el);
         // this.headerView.select('home-menu');  
     },
     listJobs: function () {
@@ -76,7 +77,7 @@ window.Router = Backbone.Router.extend({
         console.log('listJob');
         this.listJobsView = new ListJobsView();           
         this.listJobsView.render();
-        $("#content").html(this.listJobsView.el);
+        $("#main_content").html(this.listJobsView.el);
         // this.headerView.select('home-menu');  
     },
     addJob: function () {
@@ -84,7 +85,7 @@ window.Router = Backbone.Router.extend({
         console.log('addJob');
         this.AddJobView = new AddJobView();           
         this.AddJobView.render();
-        $("#content").html(this.AddJobView.el);
+        $("#main_content").html(this.AddJobView.el);
         // this.headerView.select('home-menu');  
 
     },
@@ -92,15 +93,15 @@ window.Router = Backbone.Router.extend({
         var j = new User({id: id});
         // this.ProfileView = new ProfileView();           
         // this.ProfileView.render();
-        $("#content").html(this.ProfileView({model:j}).el);
+        $("#main_content").html(this.ProfileView({model:j}).el);
 
     },
     viewJob: function (id) {
         // var j = new Job({id: id});
-        // $("#content").html(this.DetailJobView({model:j}).el);
+        // $("#main_content").html(this.DetailJobView({model:j}).el);
         this.JobView = new JobView();           
         this.JobView.render();
-        $("#content").html(this.JobView.el);
+        $("#main_content").html(this.JobView.el);
 
     },
     addCompany: function () {
@@ -108,20 +109,20 @@ window.Router = Backbone.Router.extend({
         console.log('addCompany');
         this.AddCompanyView = new AddCompanyView();           
         this.AddCompanyView.render();
-        $("#content").html(this.AddCompanyView.el);
+        $("#main_content").html(this.AddCompanyView.el);
     },
     viewCandidates: function  () {
          console.log('viewCandidates');
          this.ListCandidateView = new ListCandidateView();           
         this.ListCandidateView.render();
-        $("#content").html(this.ListCandidateView.el);
+        $("#main_content").html(this.ListCandidateView.el);
     },
 	listCandidate: function () {
         // body...
          console.log('listCandidate');
          this.ListCandidateView = new ListCandidateView();           
         this.ListCandidateView.render();
-        $("#content").html(this.ListCandidateView.el);
+        $("#main_content").html(this.ListCandidateView.el);
         // this.headerView.select('home-menu');  
     },
 	listLibrary: function () {
@@ -129,14 +130,14 @@ window.Router = Backbone.Router.extend({
          console.log('listLibrary');
          this.ListLibraryView = new ListLibraryView();           
         this.ListLibraryView.render();
-        $("#content").html(this.ListLibraryView.el);
+        $("#main_content").html(this.ListLibraryView.el);
         // this.headerView.select('home-menu');  
     },
     createTest: function  () {
         console.log('createTest');
         this.AddTestView = new AddTestView();           
         this.AddTestView.render();
-        $("#content").html(this.AddTestView.el);
+        $("#main_content").html(this.AddTestView.el);
     },
     editTest: function  () {
         // body...
@@ -145,23 +146,23 @@ window.Router = Backbone.Router.extend({
         // body...
         this.ChooseTestView = new ChooseTestView();           
         this.ChooseTestView.render();
-        $("#content").html(this.ChooseTestView.el);
+        $("#main_content").html(this.ChooseTestView.el);
     },
     viewTest: function  (id) {
         this.ViewTestView = new TestView();           
         this.ViewTestView.render();
-        $("#content").html(this.ViewTestView.el);
+        $("#main_content").html(this.ViewTestView.el);
     },
     answerTest: function  (id) {
          this.AnswerView = new AnswerView();           
         this.AnswerView.render();
-        $("#content").html(this.AnswerView.el);
+        $("#main_content").html(this.AnswerView.el);
     },
     getLinkTest: function  () {
         this.GetLinkTestView = new GetLinkTestView();           
         this.GetLinkTestView.render();
-        $("#content").html(this.GetLinkTestView.el);
-         // $("#content").html('');
+        $("#main_content").html(this.GetLinkTestView.el);
+         // $("#main_content").html('');
     }
 });
 

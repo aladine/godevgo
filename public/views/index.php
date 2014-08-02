@@ -162,7 +162,7 @@
 
 <div class="wrapper">
 	<div class="container">    	
-        <div id="content"></div>        			   	    	
+        <div id="main_content"></div>        			   	    	
 	</div>
 </div>
 
