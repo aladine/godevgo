@@ -9,100 +9,85 @@
 	<div id="primary" class="content-area">
 		<div id="content" class="container" role="main">
 			
-<article id="post-14" class="post-14 page type-page status-publish hentry">
-	<div class="entry-content">
-		<form action="" method="post" id="submit-job-form" class="job-manager-form" enctype="multipart/form-data">
+			<article id="post-14" class="post-14 page type-page status-publish hentry">
+				<div class="entry-content">
+					<form action="" method="post" id="submit-job-form" class="job-manager-form" enctype="multipart/form-data">
 
-	
-		<!-- Job Information Fields -->
-		
-					<fieldset class="fieldset-job_title">
-				<label for="job_title">Job title</label>
-				<div class="field required-field">
-					<input type="text" class="input-text" name="job_title" id="job_title" placeholder="" value="" maxlength="" />
-				</div>
-			</fieldset>
-					<fieldset class="fieldset-job_location">
-				<label for="job_location">Job location <small>(optional)</small></label>
-				<div class="field ">
-					<input type="text" class="input-text" name="job_location" id="job_location" placeholder="e.g. &quot;Ho Chi Minh, Ha Noi&quot;, &quot;Da Nang&quot;" value="" maxlength="" />
-			</fieldset>
-					<fieldset class="fieldset-job_region">
-				<label for="job_region">Job Region</label>
-				<div class="field required-field">
-					<select name="job_region" id="job_region">
-			<option value="manhattan" >Manhattan</option>
-			<option value="mountain-view" >Mountain View</option>
-			<option value="new-york" >New York</option>
-			<option value="palo-alto" >Palo Alto</option>
-			<option value="queens" >Queens</option>
-			<option value="sacramento" >Sacramento</option>
-			<option value="san-francisco" >San Francisco</option>
-			<option value="san-jose" >San Jose</option>
-			<option value="san-mateo" >San Mateo</option>
-			<option value="staten-island" >Staten Island</option>
-	</select>				</div>
-			</fieldset>
-					<fieldset class="fieldset-job_type">
-				<label for="job_type">Job type</label>
-				<div class="field required-field">
-					<select name="job_type" id="job_type">
-			<option value="freelance" >Freelance</option>
-			<option value="full-time"  selected='selected'>Full Time</option>
-			<option value="internship" >Internship</option>
-			<option value="part-time" >Part Time</option>
-			<option value="temporary" >Temporary</option>
-	</select>				</div>
-			</fieldset>
-					<fieldset class="fieldset-job_category">
-				<label for="job_category">Job category</label>
-				<div class="field required-field">
-					<select name='job_category' id='job_category' class='postform' >
-	<option class="level-0" value="22">Design</option>
-	<option class="level-0" value="7">Developement</option>
-</select>
-				</div>
-			</fieldset>
-					<fieldset class="fieldset-job_description">
-				<label for="job_description">Description</label>
-				<div class="field required-field">
-					<div id="wp-job_description-wrap" class="wp-core-ui wp-editor-wrap tmce-active"><link rel='stylesheet' id='dashicons-css'  href='http://demo.astoundify.com/jobify-darker/wp-includes/css/dashicons.min.css?ver=3.9.1' type='text/css' media='all' />
-<div id="wp-job_description-editor-container" class="wp-editor-container"><textarea class="wp-editor-area" rows="8" autocomplete="off" cols="40" name="job_description" id="job_description"></textarea></div>
-</div>
 
-				</div>
-			</fieldset>
-					<fieldset class="fieldset-job_deadline">
-				<label for="job_deadline">Closing date <small>(optional)</small></label>
-				<div class="field ">
-					<input type="text" class="input-text" name="job_deadline" id="job_deadline" placeholder="yyyy-mm-dd" value="" maxlength="" />
-<small class="description">Deadline for new applicants.</small>				</div>
-			</fieldset>
+						<!-- Job Information Fields -->
 
-							
-							
-		<p>
-			<input type="hidden" name="job_manager_form" value="submit-job" />
-			<input type="hidden" name="job_id" value="0" />
-			<input type="hidden" name="step" value="0" />
-			<input type="submit" name="submit_job" class="button" value="Submit &rarr;" />
-		</p>
+						<fieldset class="fieldset-job_title">
+							<label for="job_title">Job title</label>
+							<div class="field required-field">
+								<input type="text" class="input-text" name="job_title" id="job_title" placeholder="" value="" maxlength="" />
+							</div>
+						</fieldset>
+						<fieldset class="fieldset-job_location">
+							<label for="job_location">Job location </label>
+							<div class="field ">
+								<input type="text" class="input-text" name="job_location" id="job_location" placeholder="e.g. &quot;Ho Chi Minh, Ha Noi&quot;, &quot;Da Nang&quot;" value="" maxlength="" />
+							</fieldset>
 
-	</form>
-	</div>
-</article><!-- #post -->			
-<div class="row">
-	<div id="comments" class="comments-area col-md-9 col-md-offset-3">
+							<fieldset class="fieldset-job_type">
+								<label for="job_type">Job type</label>
+								<div class="field required-field">
+									<select name="job_type" id="job_type">
+										<option value="freelance" >Freelance</option>
+										<option value="full-time"  selected='selected'>Full Time</option>
+										<option value="internship" >Internship</option>
+										<option value="part-time" >Part Time</option>
+										<option value="temporary" >Temporary</option>
+									</select>				</div>
+								</fieldset>
+								<fieldset class="fieldset-job_category">
+									<label for="job_category">Job category</label>
+									<div class="field required-field">
+										<select name='job_category' id='job_category' class='postform' >
+											<option class="level-0" value="22">Design</option>
+											<option class="level-0" value="7">Developement</option>
+										</select>
+									</div>
+								</fieldset>
+								<fieldset class="fieldset-job_description">
+									<label for="job_description">Description</label>
+									<div class="field required-field">
+										<div id="wp-job_description-wrap" class="wp-core-ui wp-editor-wrap tmce-active"><link rel='stylesheet' id='dashicons-css'  href='http://demo.astoundify.com/jobify-darker/wp-includes/css/dashicons.min.css?ver=3.9.1' type='text/css' media='all' />
+											<div id="wp-job_description-editor-container" class="wp-editor-container"><textarea class="wp-editor-area" rows="8" autocomplete="off" cols="40" name="job_description" id="job_description"></textarea></div>
+										</div>
 
-		
-				
-	</div><!-- #comments -->
-</div>		</div><!-- #content -->
+									</div>
+								</fieldset>
+								<fieldset class="fieldset-job_deadline">
+									<label for="job_deadline">Closing date <small>(optional)</small></label>
+									<div class="field ">
+										<input type="text" class="input-text" name="job_deadline" id="job_deadline" placeholder="yyyy-mm-dd" value="" maxlength="" />
+										<small class="description">Deadline for new applicants.</small>				</div>
+									</fieldset>
 
-			<div class="paginate-links container">
-			</div>
-	</div><!-- #primary -->
 
-	
 
-		</div><!-- #main -->
+									<p>
+										<input type="hidden" name="job_manager_form" value="submit-job" />
+										<input type="hidden" name="job_id" value="0" />
+										<input type="hidden" name="step" value="0" />
+										<input type="submit" name="submit_job" class="button" value="Submit &rarr;" />
+									</p>
+
+								</form>
+							</div>
+						</article><!-- #post -->			
+						<div class="row">
+							<div id="comments" class="comments-area col-md-9 col-md-offset-3">
+
+
+
+							</div><!-- #comments -->
+						</div>		</div><!-- #content -->
+
+						<div class="paginate-links container">
+						</div>
+					</div><!-- #primary -->
+
+
+
+				</div><!-- #main -->

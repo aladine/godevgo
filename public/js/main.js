@@ -165,9 +165,11 @@ window.Router = Backbone.Router.extend({
     }
 });
 
-templateLoader.load(["AddJobView","AddProfileView","FooterView","HeaderView","HomeView","JobView","ListJobsView","LoginView","ProfileView","RegisterView",
+templateLoader.load(["AddJobView","AddProfileView","FooterView","HeaderView","HomeView",
+    "JobView","ListJobsView","LoginView","ProfileView","RegisterView",
     "ListCandidateView","ListLibraryView","ForgetPasswordView",
-    "TestView","AddTestView","EditTestView","AnswerView","GetLinkTestView","ChooseTestView"
+    "TestView","AddTestView","EditTestView","AnswerView","GetLinkTestView","ChooseTestView",
+    "QuestionItemView"
     ],
 	function () {
 		app = new Router();

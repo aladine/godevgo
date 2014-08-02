@@ -1,9 +1,8 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        // bundle: grunt.file.readJSON('js/config.json'),
         clean: {
-            style: ['css','styleguide']
+            style: ['css']
         },
         copy: {
             styleguide: {
@@ -16,62 +15,9 @@ module.exports = function(grunt) {
                 ]
             }
         },     
-        compass: {
-            dev: {
-                options: {
-                    sassDir: 'sass',
-                    cssDir: 'css/development', 
-                    outputStyle: 'expanded',
-                    environment: 'development'
-                }
-            },
-            prod: {
-                options: {
-                    // sassDir: 'sass',
-                    // cssDir: 'css',  
-                    // outputStyle: 'expanded',                  
-                    config: 'config.rb',
-                    environment: 'production'
-                }
-            }
-        },    
-        styleguide: {
-            prod: {
-                options: {
-                    framework: {
-                        name: 'kss',
-                        options: {
-                            css: 'css/development/screen.css'
-                        }
-                    },
-                    name: 'Style Guide',
-                    template: {
-                        src: 'styleguide-template',
-                        include: ['styleguide-template/public/prettify.js']
-                    }
-                },
-                files: [{
-                    'styleguide': 'css/development/screen.css'
-                }]
-            }
-        },
-        less: {
-            prod: {
-                files: {
-                    "styleguide/public/kss.css": "styleguide-template/public/kss.less"
-                }
-            }
-        },        
+          
         watch: {
-            sass: {
-                files: ['Gruntfile.js','sass/*.*'],
-                tasks: ['compass:dev']
-                //'copy:styleguide','styleguide:prod','compass:dev',
-            },
-            styleguide: {
-                files: ['styleguide-template/public/*.less','styleguide-template/index.html'],
-                tasks: ['less:prod','styleguide:prod']
-            },
+            
             lint: {
                 files: ['<%= jshint.custom.src %>'],//'js/custom/attendance.js'
                 tasks: ['jshint:custom']
@@ -80,8 +26,8 @@ module.exports = function(grunt) {
                 // }         
             },
             compress:{
-                files: ['js/custom/global.js'],
-                tasks: ['shell:compress']
+                files: ['*.js','views/*.js'],
+                tasks: ['uglify:prod']
             },
             ug:{
                 files: ['js/custom/global.js'],
@@ -116,7 +62,7 @@ module.exports = function(grunt) {
             
             },
             all: {
-                src: ['Gruntfile.js', 'js/custom/*.js'],
+                src: ['Gruntfile.js', '*.js','views/*.js'],
                 options: {
                     "-W099":true,
                     "-W069":true,
@@ -160,12 +106,8 @@ module.exports = function(grunt) {
                     // sourceMapIn: 'example/coffeescript-sourcemap.js', // input sourcemap from a previous compilation
                 },
                 files: {
-                    'js/minified/global.min.js': 'js/custom/global.js',    
-                    'js/minified/admin.adduser.min.js': 'js/custom/admin.adduser.js', 
-                    'js/minified/admin.edituser.min.js': 'js/custom/admin.edituser.js', 
-                    'js/minified/admin.addstudents.min.js': 'js/custom/admin.addstudents.js',
-                    'js/minified/admin.profile.min.js': 'js/custom/admin.profile.js'
-                   
+                    'bundle_views.js': "views/*.js",
+                    'bundle.js': ["../lib/jquery/jquery.js ","../lib/jquery/jquery-migrate.min.js ","../lib/underscore-min.js ","../lib/backbone.js","utils.js","models/model.js","bundle_views.js","app.js","main.js","common.js"]
                 }    
             },
             dev:{
@@ -216,7 +158,8 @@ module.exports = function(grunt) {
     grunt.registerTask('lint',['watch:lint']); 
     grunt.registerTask('compress',['watch:compress']);  
     // grunt.registerTask('compass',['watch:sass']);  
-    grunt.registerTask('minify',['jshint:custom','uglify:prod','shell:list']);  
+    grunt.registerTask('minify',['jshint:custom','uglify:prod']);
+
     grunt.registerTask('uglify_custom',['uglify:dev']);  
 
     // grunt.registerTask('hint_fee',['watch:hint']); 
