@@ -2574,6 +2574,11 @@ body.woocommerce-page form .form-row {
 /**
  * Job Listings
  */
+ .jobify_widget_jobs
+ {
+ background-image: url(images/slide-one-2x.jpg);
+ 
+ }
 .jobify_widget_jobs ul.job_listings {
 	border-radius: 6px;
 }
@@ -4130,4 +4135,15 @@ padding-right: 40px;
 background-position: 94% 50%;
 background-size: auto 20px;
 background-repeat: no-repeat;
+}
+
+.page-header
+{
+display: block;
+height: 629px;
+padding-top: 266px;
+padding-bottom: 68px;
+background-image: radial-gradient(circle farthest-side at 40% 40%, #FFFFFF, rgba(255, 255, 255, 0.9) 39%), url(http://i.imgur.com/TuDZifP.jpg);
+background-position: 0% 0%, 50% 50%;
+background-size: auto, cover;
 }
