@@ -45,7 +45,6 @@ window.Router = Backbone.Router.extend({
             this.homeView.delegateEvents(); // delegate events when the view is recycled
         }                
         $("#main_content").html(this.homeView.el);
-
         this.headerView.select('home-menu');                                
     },
     doLogIn: function () {

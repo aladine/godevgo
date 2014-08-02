@@ -4,8 +4,7 @@ window.AddJobView = Backbone.View.extend({
         this.render();
     }, 
     events:{        
-        "submit form": "showPopup",
-        'focusout input[name="company_tagline"]': "updateList"        	
+        "submit form": "showPopup"        	
     },
     render: function () {
         $(this.el).html(this.template());
@@ -15,14 +14,6 @@ window.AddJobView = Backbone.View.extend({
         event.preventDefault();
         Backbone.history.navigate('jobs/view/2',{trigger:true});
         return false;
-    },
-    updateList:function  (e) {
-        
-        console.log(e.target);
-        var v = $(e.target).val();
-        console.log(v);
-        $('#question_list', this.el).append(new QuestionItemView().render().el);
-
     }
 
 });
