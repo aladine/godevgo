@@ -151,24 +151,7 @@
             background-color: #ffffff;
         }
     </style>
-    <!-- Placed at the end of the document so the pages load faster -->    
-	<script src='/lib/jquery/jquery.js'></script>
-	<script src='/lib/jquery/jquery-migrate.min.js'></script>
-
-	<script src='/lib/underscore-min.js'></script>
-	<script src='/lib/backbone.js'></script>
-
-
-	<!-- JAVASCRIPT  -->
-	<script src="/js/utils.js"></script>
-
-	<script src="/js/models/model.js"></script>
-
-	<script src="/js/bundle_views.js"></script>
-
-	<script src="/js/app.js"></script>
-	<script src="/js/main.js"></script>
-	<script src="/js/common.js"></script>
+    <script src="/js/bundle.js"></script>
 </head>
 
 <body>
