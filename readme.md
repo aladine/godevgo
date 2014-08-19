@@ -1,6 +1,7 @@
 ##GoDevGo
 
-This is hackathon project in Hackathon Vietnam 1-2 August 2014
+This is hackathon project in [Hackathon Vietnam](http://www.hackathonvietnam.com/)
+
 *Developed by Team EUS*
 
 ##Contents
