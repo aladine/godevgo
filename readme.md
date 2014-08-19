@@ -6,8 +6,8 @@ This is hackathon project in Hackathon Vietnam 1-2 August 2014
 ##Contents
 1. Pitching slides
 2. Code base for Demo:
-	a. Backend: Laravel framework
-	b. Frontend: Backbone JS
+	* Backend: Laravel PHP framework
+	* Frontend: Backbone JS
 3. Link for website:
 http://dev.littleselfies.com:8000/
 
