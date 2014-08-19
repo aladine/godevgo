@@ -3,13 +3,30 @@ window.AddTestView = Backbone.View.extend({
         this.render();
     },
     events: {
-        "click #mypop": "showPopup"
+        "click #mypop": "showPopup",
+        'focusout input[name="company_tagline"]': "updateList"
     },
     render: function() {
         $(this.el).html(this.template());
         return this;
     },
-    showPopup: function() {}
+    showPopup: function() {
+
+    },
+    updateList:function  (e) {
+        
+        // console.log(e.target);
+        var v = $(e.target).val();
+        v = parseInt(v,10);
+        console.log(v);
+        $('#question_list', this.el).html(''); 
+        for (var i = 1; i <=v; i++) {
+            $('#question_list', this.el).append(new QuestionItemView({index:i}).render().el);    
+        };
+        
+        
+
+    }
 });
 
 window.ChooseTestView = Backbone.View.extend({

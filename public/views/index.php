@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-	
+
 	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
 	<meta name="generator" content="HAPedit 3.0">
-    
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link rel="shortcut icon" href="../favicon.ico">	
+    <link rel="shortcut icon" href="../favicon.ico">
 
     <title>GoDevGo</title>
     <link rel='stylesheet' id='jobify-vendor-css' href='/css/vendor.min.css' type='text/css' media='all' />
@@ -19,7 +19,7 @@
     <link rel='stylesheet' id='jobify-css' href='/css/style.css' type='text/css' media='all' />
     <link rel='stylesheet' id='jobify-responsive-css' href='/css/responsive.min.css' type='text/css' media='all' />
     <link rel='stylesheet' id='sccss_style-css' href='/css/job.css' type='text/css' media='all' />
-        		
+
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="/lib/html5shiv.js"></script>
@@ -161,13 +161,22 @@
 <div id="headerView"></div>
 
 <div class="wrapper">
-	<div class="container">    	
-        <div id="main_content"></div>        			   	    	
+	<div class="container">
+        <div id="main_content"></div>
 	</div>
 </div>
 
 <div class="footer"></div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-53975507-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 <div class="modal fade" id="loadingModal">
 	<div class="modal-dialog">
     	<div class="modal-content">
@@ -175,7 +184,7 @@
 				<span>  Loading...</span>
 			</div>
 		</div>
-	</div>	
+	</div>
 </div>
 </body>
 </html>

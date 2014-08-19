@@ -19,9 +19,11 @@ window.AddCompanyView = Backbone.View.extend({
 });
 
 window.QuestionItemView = Backbone.View.extend({
-
-    initialize: function () {
+    index : 0,
+    initialize: function (options) {
         this.render();
+        this.index = options.index;
+        console.log('init'+this.index);
     },
     
     events:{        
@@ -29,7 +31,7 @@ window.QuestionItemView = Backbone.View.extend({
     },
 
     render: function () {
-        $(this.el).html(this.template());
+        $(this.el).html(this.template({index:this.index}));
         return this;
     },
     showPopup: function () {
