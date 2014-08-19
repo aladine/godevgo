@@ -1,9 +1,19 @@
-Team EUS
+##GoDevGo
 
-What is inside here:
+This is hackathon project in Hackathon Vietnam 1-2 August 2014
+*Developed by Team EUS*
+
+##Contents
 1. Pitching slides
-2. Code base for Demo: 
-  a. Backend: Laravel framework
-  b. Frontend: Backbone JS
+2. Code base for Demo:
+	a. Backend: Laravel framework
+	b. Frontend: Backbone JS
 3. Link for website:
-	http://128.199.146.176:8000/
+http://dev.littleselfies.com:8000/
+
+
+Good developer deserves good thing
+
+GoDevGo is the developer recruitment platform which targets to internship and junior level.
+
+![Go Dev Go](http://cdn.eus.vn/uploads/media_file/godevgo.jpg)
